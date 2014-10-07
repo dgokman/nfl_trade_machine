@@ -10,3 +10,19 @@
   </p>
 
 <% end %>
+
+<% if current_user.trade_teams %>
+  <%= form_for @traded_player do |f| %>
+
+    <p>
+      <%= f.label :player %><br>
+      <%= f.collection_select(:player_id, Player.all, :id, :name) %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+
+  <% end %>
+<% end %>
+
