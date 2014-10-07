@@ -2,10 +2,13 @@ class TradedPlayersController < ApplicationController
   before_action :authenticate_user!,
     only: [:new, :create, :update, :edit, :destroy]
 
-  # def new
-  #   @trade_team = TradeTeam.new
-  #   @traded_player = TradedPlayer.new
-  # end
+  def new
+    @trade_team = TradeTeam.find(params[:trade_team_id])
+    @traded_player = TradedPlayer.new
+  end
+
+  def show
+  end
 
   # def create
   #   @trade_team = TradeTeam.all
