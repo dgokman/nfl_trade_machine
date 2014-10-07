@@ -12,9 +12,9 @@
 <% @trades.each do |trade| %>
   <h2><%= trade.id %></h2>
     <% trade.trade_teams.each do |trade_team| %>
-      <h3><%= Team.find(trade_team.team_id).name %></h3>
         <% trade_team.traded_players.each do |traded_player| %>
-          <h4><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).salary %> | <%= Player.find(traded_player.player_id).position %></h4>
+          <h3><%= Team.find(trade_team.team_id).name %></h3>
+          <h4><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h4>
         <% end %>
     <% end %>
 <% end %>

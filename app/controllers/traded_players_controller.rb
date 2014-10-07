@@ -9,7 +9,6 @@ class TradedPlayersController < ApplicationController
   end
 
   def create
-
     @teams = Team.all
     @trade_team = TradeTeam.find(params[:trade_team_id])
     @trade = @trade_team.trade_id
