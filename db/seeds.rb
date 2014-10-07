@@ -28,131 +28,117 @@ Team.create([
   }
   ])
 
-Position.create([
-  {
-    name: "Quarterback"
-  },
-  {
-    name: "Wide Receiver"
-  },
-  {
-    name: "Running Back"
-  },
-  {
-    name: "Kicker"
-  }
-  ])
 
 Player.create([
   {
     name: "Victor Cruz",
     salary: 10,
-    position_id: 2,
+    position: "WR",
     team_id: 1,
     rating: 8
   },
   {
     name: "Eli Manning",
     salary: 9,
-    position_id: 1,
+    position: "QB",
     team_id: 1,
     rating: 9
   },
   {
     name: "Rashad Jennings",
     salary: 8,
-    position_id: 3,
+    position: "RB",
     team_id: 1,
     rating: 9
   },
    {
     name: "Josh Brown",
     salary: 5,
-    position_id: 4,
+    position: "K",
     team_id: 1,
     rating: 6
   },
    {
     name: "Sammy Watkins",
     salary: 10,
-    position_id: 2,
+    position: "WR",
     team_id: 2,
     rating: 8
   },
   {
     name: "Kyle Orton",
     salary: 9,
-    position_id: 1,
+    position: "QB",
     team_id: 2,
     rating: 9
   },
   {
     name: "CJ Spiller",
     salary: 8,
-    position_id: 3,
+    position: "RB",
     team_id: 2,
     rating: 9
   },
    {
     name: "Dan Carpenter",
     salary: 5,
-    position_id: 4,
+    position: "K",
     team_id: 2,
     rating: 6
   },
   {
     name: "Josh Gordon",
     salary: 10,
-    position_id: 2,
+    position: "WR",
     team_id: 3,
     rating: 8
   },
   {
     name: "Johnny Football",
     salary: 9,
-    position_id: 1,
+    position: "QB",
     team_id: 3,
     rating: 9
   },
   {
     name: "Terrance West",
     salary: 8,
-    position_id: 3,
+    position: "RB",
     team_id: 3,
     rating: 9
   },
    {
     name: "Billy Cundiff",
     salary: 5,
-    position_id: 4,
+    position: "K",
     team_id: 3,
     rating: 6
   },
   {
     name: "Jordy Nelson",
     salary: 10,
-    position_id: 2,
+    position: "WR",
     team_id: 4,
     rating: 8
   },
   {
     name: "Aaron Rodgers",
     salary: 9,
-    position_id: 1,
+    position: "QB",
     team_id: 4,
     rating: 9
   },
   {
     name: "Eddie Lacy",
     salary: 8,
-    position_id: 3,
+    position: "RB",
     team_id: 4,
     rating: 9
   },
    {
     name: "Mason Crosby",
     salary: 5,
-    position_id: 4,
+    position: "K",
     team_id: 4,
     rating: 6
   },
