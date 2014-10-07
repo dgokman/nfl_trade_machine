@@ -37,19 +37,19 @@ ActiveRecord::Schema.define(version: 20141007034621) do
   create_table "trade_teams", force: true do |t|
     t.integer "team_id",  null: false
     t.integer "trade_id"
-    t.integer "user_id",  null: false
+    t.integer "user_id"
   end
 
   create_table "traded_players", force: true do |t|
     t.integer "player_id",     null: false
     t.integer "trade_team_id", null: false
-    t.integer "user_id",       null: false
+    t.integer "user_id"
   end
 
   create_table "trades", force: true do |t|
-    t.string  "status",        null: false
-    t.integer "team_1_change", null: false
-    t.integer "team_2_change", null: false
+    t.string  "status"
+    t.integer "team_1_change"
+    t.integer "team_2_change"
     t.integer "user_id",       null: false
   end
 

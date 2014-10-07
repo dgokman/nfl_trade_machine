@@ -7,16 +7,16 @@ class TradeTeamsController < ApplicationController
   end
 
   def new
+    @trade = Trade.find(params[:trade_id])
     @trade_team = TradeTeam.new
-    @traded_player = TradedPlayer.new
   end
 
   def create
-    binding.pry
-    @traded_player = TradedPlayer.new
-    @trade_team = current_user.trade_teams.build(trade_teams_params)
+    @trade = Trade.find(params[:trade_id])
+    @trade_team = @trade.trade_teams.build(trade_teams_params)
+
     @trade_team.save
-    render 'trades/index'
+    redirect_to new_trade_team_traded_player_path
   end
 
   private

@@ -11,7 +11,7 @@ class TradedPlayersController < ApplicationController
     @trade_team = TradeTeam.all
     @traded_player = current_user.traded_players.build(traded_players_params)
     @traded_player.save
-    redirect_to @trade
+    redirect_to new_trade_team_traded_player_path
   end
 
   private

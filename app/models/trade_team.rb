@@ -1,6 +1,5 @@
 class TradeTeam < ActiveRecord::Base
   belongs_to :trade
-  belongs_to :user
-  has_many :teams
+  belongs_to :team
   has_many :traded_players
 end
