@@ -1,7 +1,24 @@
-body {
-  margin: 1em;
-}
 
 ul {
   list-style-type: none;
+}
+
+.top-bar {
+  height: 70px;
+}
+
+li.name h1 a {
+  font-size: 20px;
+}
+
+.text {
+  margin: 1em;
+}
+
+.top_bar_section {
+  float: right;
+}
+
+.right {
+  margin-top: 0em;
 }

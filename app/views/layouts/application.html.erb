@@ -12,10 +12,15 @@
   </head>
 
   <body>
-  <h1>NFL TRADE MACHINE</h1>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-    <ul>
+  <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+    <h1><%= link_to "NFL Trade Machine", root_path %></h1>
+  </ul>
+
+
+    <!-- Right Nav Section -->
+    <ul class="right">
     <% if user_signed_in? %>
       <li><%= link_to "Sign out", destroy_user_session_path, data: {method: 'delete'} %></li>
       <li><%= link_to "Edit Account Information",edit_user_registration_path %></li>
@@ -24,7 +29,13 @@
       <li><%= link_to "Create Account", new_user_registration_path %></li>
     <% end %>
     </ul>
+
+  </nav>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+   <div class="text">
     <%= yield %>
+   </div>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
