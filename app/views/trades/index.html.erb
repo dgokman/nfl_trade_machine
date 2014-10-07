@@ -1,7 +1,7 @@
 <%= form_for @trade do |f| %>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit("Start Trade") %>
   </p>
 
 <% end %>
@@ -14,7 +14,7 @@
     <% trade.trade_teams.each do |trade_team| %>
       <h3><%= Team.find(trade_team.team_id).name %></h3>
         <% trade_team.traded_players.each do |traded_player| %>
-          <h4><%= Player.find(traded_player.player_id).name %></h4>
+          <h4><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).salary %> | <%= Player.find(traded_player.player_id).position_id %></h4>
         <% end %>
     <% end %>
 <% end %>

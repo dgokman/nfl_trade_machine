@@ -1,8 +1,9 @@
 class TradesController < ApplicationController
+before_action :authenticate_user!
 
   def index
     @trade = Trade.new
-    @trades = Trade.all
+    @trades = Trade.where(user_id: current_user.id)
   end
 
   def show
