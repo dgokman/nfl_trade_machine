@@ -2,6 +2,7 @@ class TradesController < ApplicationController
 
   def index
     @trade = Trade.new
+    @trades = Trade.all
   end
 
   def show
