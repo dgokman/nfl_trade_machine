@@ -3,7 +3,6 @@ class TradeTeamsController < ApplicationController
     only: [:new, :create, :update, :edit, :destroy]
 
   def index
-
   end
 
   def new
