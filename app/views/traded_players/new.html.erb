@@ -1,0 +1,12 @@
+<%= form_for [@trade_team, @traded_player] do |f| %>
+
+  <p>
+    <%= f.label :player %><br>
+    <%= f.collection_select(:player_id, Player.where(team_id: @trade_team.team_id), :id, :name) %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
