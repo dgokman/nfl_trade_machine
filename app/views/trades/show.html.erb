@@ -1,0 +1,12 @@
+<%= form_for [@trade, @trade_team] do |f| %>
+
+  <p>
+    <%= f.label :team %><br>
+    <%= f.collection_select(:team_id, Team.all, :id, :name) %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

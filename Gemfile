@@ -14,6 +14,7 @@ gem 'devise'
   group :development, :test do
     gem 'spring'
     gem 'rspec-rails', '~> 3.0.0'
+    gem 'pry-rails'
   end
 
 # Use ActiveModel has_secure_password
