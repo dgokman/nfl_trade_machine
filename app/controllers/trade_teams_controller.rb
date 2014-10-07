@@ -14,7 +14,7 @@ class TradeTeamsController < ApplicationController
   def create
     @trade = Trade.find(params[:trade_id])
     @trade_team = @trade.trade_teams.build(trade_teams_params)
-
+    @trade_team.update(user_id: current_user.id)
     @trade_team.save
     redirect_to new_trade_team_traded_player_path(@trade_team)
   end
