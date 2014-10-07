@@ -3,6 +3,7 @@ class TradedPlayersController < ApplicationController
     only: [:new, :create, :update, :edit, :destroy]
 
   def new
+    @teams = Team.all
     @trade_team = TradeTeam.find(params[:trade_team_id])
     @traded_player = TradedPlayer.new
   end
