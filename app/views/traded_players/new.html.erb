@@ -18,7 +18,10 @@
   <p>
     <%= f.submit("Select Player") %>
   </p>
+<% end %>
 
+<% if current_user.trades.last.trade_teams.length < 2 %>
   <%= link_to "Select Another Team", trade_path(@trade) %>
-
+<% else %>
+  <%= link_to "Finish Trade", trade_path(@trade) %>
 <% end %>
