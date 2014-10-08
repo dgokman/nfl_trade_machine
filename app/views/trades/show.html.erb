@@ -21,4 +21,9 @@
 
 <% end %>
 
-<%= link_to "Submit Trade", trades_path %>
+<%= form_for @trade do |f| %>
+
+  <p>
+    <%= f.submit("Submit Trade") %>
+  </p>
+<% end %>
