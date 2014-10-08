@@ -5,13 +5,17 @@
 <% if user_signed_in? %>
 
 <h3>Your trades</h3>
+
   <% @trades.each do |trade| %>
-  <hr>
-    <% trade.trade_teams.each do |trade_team| %>
+    <% if trade.status %>
+      <hr>
+      <h3>Trade Result: <%= trade.status %></h3>
+      <% trade.trade_teams.each do |trade_team| %>
         <% trade_team.traded_players.each do |traded_player| %>
           <h4><%= Team.find(trade_team.team_id).name %></h4>
           <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
         <% end %>
+      <% end %>
     <% end %>
   <% end %>
 <% end %>
