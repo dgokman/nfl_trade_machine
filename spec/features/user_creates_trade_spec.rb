@@ -4,21 +4,25 @@ feature "User creates a trade" do
   scenario "User successfully creates a trade" do
     user = FactoryGirl.create(:user)
     team = FactoryGirl.create(:team)
+    team2 = FactoryGirl.create(:team)
     player = FactoryGirl.create(:player)
+    player2 = FactoryGirl.create(:player)
 
     sign_in_as(user)
 
     click_link "trade"
     click_on "Start Trade"
-    select "New1 York Giants", from: "trade_team_team_id"
+    select team.name, from: "trade_team_team_id"
     click_on "Select Team"
-    select "Victor1 Cruz", from: "traded_player_player_id"
+    save_and_open_page
+    select player.name, from: "traded_player_player_id"
     click_link "Select Another Team"
-    select "New2 York Giants", from: "trade_team_team_id"
+    select team2.name, from: "trade_team_team_id"
     click_on "Select Team"
-    select "Victor2 Cruz", from: "traded_player_player_id"
+    select player2.name, from: "traded_player_player_id"
     click_link "Submit Trade"
-    expect(page).to have_content "Trade Result: New York Giants"
+    expect(page).to have_content "Trade Result"
+    save_and_open_page
   end
 
   scenario "User selects the same team twice" do
@@ -43,7 +47,6 @@ feature "User creates a trade" do
     sign_in_as(user)
     click_link "trade"
     click_on "Start Trade"
-    save_and_open_page
     select "New5 York Giants", from: "trade_team_team_id"
     click_on "Select Team"
     select "Victor5 Cruz", from: "traded_player_player_id"
