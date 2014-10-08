@@ -1,23 +1,29 @@
 
 <%= form_for @trade do |f| %>
+  <% if @trade.errors.any? %>
+    <div id="error_explanation">
+      <h4><%= pluralize(@trade.errors.count, "error") %> prohibited this article from being saved:</h4>
+      <ul>
+        <% @trade.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <p>
     <%= f.submit("Start Trade") %>
   </p>
-
 <% end %>
 
-
-<h3>Your trades</h3>
-
-<% @trades.each do |trade| %>
-  <hr>
-    <% trade.trade_teams.each do |trade_team| %>
-        <% trade_team.traded_players.each do |traded_player| %>
-          <h4><%= Team.find(trade_team.team_id).name %></h4>
-          <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
-        <% end %>
+<%= link_to "See all Trades", root_path %>
+<% unless @trades == [] %>
+<hr>
+<h3>Trade Result:</h3>
+  <% @trades.last.trade_teams.each do |trade_team| %>
+    <% trade_team.traded_players.each do |traded_player| %>
+      <h4><%= Team.find(trade_team.team_id).name %></h4>
+        <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
     <% end %>
+  <% end %>
 <% end %>
-
-
