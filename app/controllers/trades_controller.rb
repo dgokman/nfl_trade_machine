@@ -21,12 +21,21 @@ before_action :authenticate_user!
   end
 
   def update
-    player_arr = []
+    team_salary = {}
     @trade = Trade.find(params[:id])
     @trade.trade_teams.each do |trade_team|
-      player_arr << trade_team.traded_players.to_a
-      binding.pry
+      trade_team.traded_players.each do |traded_player|
+        if team_salary[traded_player.trade_team_id]
+          team_salary[traded_player.trade_team_id] <<
+          traded_player.player_id
+        else
+          team_salary[traded_player.trade_team_id] =
+          [traded_player.player_id]
+        end
+      end
     end
+    team_salary
+    binding.pry
     redirect_to trades_path
   end
 end
