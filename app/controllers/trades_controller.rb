@@ -34,7 +34,12 @@ before_action :authenticate_user!
         end
       end
     end
-    team_salary
+    total_salary = {}
+    team_salary.each do |team, salary|
+      total = salary.inject { |sum, x| sum + x }
+      total_salary[team] = total
+    end
+    total_salary
     binding.pry
     redirect_to trades_path
   end
