@@ -40,7 +40,11 @@ before_action :authenticate_user!
       total_salary[team] = total
     end
     total_salary
-    binding.pry
+    if total_salary[1] < total_salary[2]
+      @trade.update(status: "passed")
+    else
+      @trade.update(status: "failed")
+    end
     redirect_to trades_path
   end
 end

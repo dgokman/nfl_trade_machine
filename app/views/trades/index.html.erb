@@ -19,7 +19,7 @@
 <%= link_to "See all Trades", root_path %>
 <% unless @trades == [] %>
 <hr>
-<h3>Trade Result:</h3>
+<h3>Trade Result: <%= @trades.last.status %></h3>
   <% @trades.last.trade_teams.each do |trade_team| %>
     <% trade_team.traded_players.each do |traded_player| %>
       <h4><%= Team.find(trade_team.team_id).name %></h4>
