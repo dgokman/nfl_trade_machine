@@ -17,6 +17,7 @@
 <% end %>
 
 <%= link_to "See all Trades", root_path %>
+<% unless @trades.nil? %>
 <hr>
 <h3>Trade Result:</h3>
   <% @trades.last.trade_teams.each do |trade_team| %>
@@ -25,3 +26,4 @@
         <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
     <% end %>
   <% end %>
+<% end %>
