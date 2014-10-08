@@ -39,11 +39,15 @@ before_action :authenticate_user!
       total = salary.inject { |sum, x| sum + x }
       total_salary[team] = total
     end
-    total_salary
-    if total_salary[1] < total_salary[2]
-      @trade.update(status: "passed")
-    else
-      @trade.update(status: "failed")
+    diff = []
+    total_salary.each do |team, salary|
+      diff << salary
+      total = diff.inject { |minus, x| minus - x }
+      if total == 0
+        @trade.update(status: "passed")
+      else
+        @trade.update(status: "failed")
+      end
     end
     redirect_to trades_path
   end
