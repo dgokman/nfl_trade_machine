@@ -13,7 +13,10 @@ before_action :authenticate_user!
 
   def create
     @trade = Trade.new(user_id: current_user.id)
-    @trade.save
-    redirect_to @trade
+    if @trade.save
+      redirect_to @trade
+    else
+      render 'index'
+    end
   end
 end
