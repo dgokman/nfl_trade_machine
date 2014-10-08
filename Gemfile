@@ -20,6 +20,7 @@ gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
     gem 'capybara'
     gem 'pry-rails'
     gem 'factory_girl_rails'
+    gem 'launchy'
   end
 
 # Use ActiveModel has_secure_password
