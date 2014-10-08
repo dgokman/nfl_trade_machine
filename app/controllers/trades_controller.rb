@@ -25,12 +25,12 @@ before_action :authenticate_user!
     @trade = Trade.find(params[:id])
     @trade.trade_teams.each do |trade_team|
       trade_team.traded_players.each do |traded_player|
-        if team_salary[traded_player.trade_team_id]
-          team_salary[traded_player.trade_team_id] <<
-          traded_player.player_id
+        if team_salary[TradeTeam.find(traded_player.trade_team_id).team_id]
+          team_salary[TradeTeam.find(traded_player.trade_team_id).team_id] <<
+          Player.find(traded_player.player_id).salary
         else
-          team_salary[traded_player.trade_team_id] =
-          [traded_player.player_id]
+          team_salary[TradeTeam.find(traded_player.trade_team_id).team_id] =
+          [Player.find(traded_player.player_id).salary]
         end
       end
     end
