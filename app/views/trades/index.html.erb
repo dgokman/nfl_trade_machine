@@ -17,7 +17,7 @@
 <% end %>
 
 <%= link_to "See all Trades", root_path %>
-<% unless @trades.nil? %>
+<% unless @trades == [] %>
 <hr>
 <h3>Trade Result:</h3>
   <% @trades.last.trade_teams.each do |trade_team| %>
