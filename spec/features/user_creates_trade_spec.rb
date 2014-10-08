@@ -4,7 +4,8 @@ feature "User creates a trade" do
   scenario "User successfully creates a trade" do
     user = FactoryGirl.create(:user)
     sign_in_as(user)
-    click_link "Make a Trade!"
+
+    click_link "trade"
     click_on "Start Trade"
     select "New York Giants", from: "trade_team_team_id"
     click_on "Select Team"
@@ -20,7 +21,7 @@ feature "User creates a trade" do
   scenario "User selects the same team twice" do
     user = FactoryGirl.create(:user)
     sign_in_as(user)
-    click_link "Make a Trade!"
+    click_link "trade"
     click_on "Start Trade"
     select "New York Giants", from: "trade_team_team_id"
     click_on "Select Team"
@@ -32,7 +33,7 @@ feature "User creates a trade" do
   scenario "User selects the same player twice" do
     user = FactoryGirl.create(:user)
     sign_in_as(user)
-    click_link "Make a Trade!"
+    click_link "trade"
     click_on "Start Trade"
     select "New York Giants", from: "trade_team_team_id"
     click_on "Select Team"
