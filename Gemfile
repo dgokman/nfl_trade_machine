@@ -17,7 +17,9 @@ gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
   group :development, :test do
     gem 'spring'
     gem 'rspec-rails', '~> 3.0.0'
+    gem 'capybara'
     gem 'pry-rails'
+    gem 'factory_girl_rails'
   end
 
 # Use ActiveModel has_secure_password
