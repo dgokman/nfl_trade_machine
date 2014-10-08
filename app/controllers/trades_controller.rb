@@ -16,4 +16,17 @@ before_action :authenticate_user!
     @trade.save
     redirect_to @trade
   end
+
+  def update
+    total_salary = 0
+    @trade = Trade.find(params[:id])
+    @trade.trade_teams.each do |trade_team|
+      trade_team.traded_players.each do |traded_player|
+        salary = Player.find(traded_player.player_id).salary
+        total_salary += salary
+      end
+    end
+    total_salary
+    redirect_to trades_path
+  end
 end
