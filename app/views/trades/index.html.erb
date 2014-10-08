@@ -17,11 +17,8 @@
 <% end %>
 
 <%= link_to "See all Trades", root_path %>
-
-<h2>Trade Result</h2>
-
-
-  <hr>
+<hr>
+<h3>Trade Result:</h3>
   <% @trades.last.trade_teams.each do |trade_team| %>
     <% trade_team.traded_players.each do |traded_player| %>
       <h4><%= Team.find(trade_team.team_id).name %></h4>
