@@ -17,7 +17,7 @@ class TradedPlayersController < ApplicationController
     player = Player.find(@traded_player.player_id).name
     if @traded_player.save
       redirect_to new_trade_team_traded_player_path(@trade_team),
-        notice: "#{player} has been selected"
+        notice: "#{player} has been selected. Select another player or choose a new team"
     else
       render 'new'
     end
