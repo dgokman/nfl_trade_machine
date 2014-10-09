@@ -21,7 +21,7 @@
 <hr>
   <h3>Trade Result: <%= @trades.last.status %></h3>
   <% if @trades.last.cap_needed %>
-    <h4 id="red">For trade to pass, cut salary by $<%= @trades.last.cap_needed %></h4>
+    <h4 id="red">For trade to pass, cut <%= @trades.last.cap_needed_team %> salary by $<%= @trades.last.cap_needed %></h4>
   <% end %>
     <% @trades.last.trade_teams.each do |trade_team| %>
     <% trade_team.traded_players.each do |traded_player| %>
