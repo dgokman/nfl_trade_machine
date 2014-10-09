@@ -49,10 +49,6 @@ label {
   color: white;
 }
 
-h4#red {
-  color: red;
-}
-
 
 body {
   background-image: url('/background.jpg');
@@ -61,6 +57,19 @@ body {
 p, h1, h2, h3, h4, h5, li {
   color: white;
 }
+
+h3#black {
+  color: black;
+}
+
+h4#blue {
+  color: #000099;
+}
+
+h4#red {
+  color: #B00000;
+}
+
 
 .trade {
   -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;

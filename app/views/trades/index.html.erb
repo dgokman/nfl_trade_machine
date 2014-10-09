@@ -19,15 +19,14 @@
 <%= link_to "See all Trades", root_path %>
 <% unless @trades == [] || @trades.last.status.nil? || current_user.trades.last.trade_teams.length < 2 %>
 <hr>
-  <h3>Trade Result: <%= @trades.last.status %></h3>
-    <h4><%= @trades.last.team_1_new_cap_hit %> | <%= @trades.last.team_2_new_cap_hit %>
+  <h3 id="black"><strong>Trade Result: <%= @trades.last.status %></strong></h3>
+    <h4 id="blue"><strong><%= @trades.last.team_1_new_cap_hit %> | <%= @trades.last.team_2_new_cap_hit %></strong>
     <% if @trades.last.cap_needed %></h4>
-    <h4 id="red">For trade to pass, cut <%= @trades.last.cap_needed_team %> post-trade salary by $<%= @trades.last.cap_needed %></h4>
+    <h4 id="red"><strong>For trade to pass, cut <%= @trades.last.cap_needed_team %> post-trade salary by $<%= @trades.last.cap_needed %></strong></h4>
     <% end %>
     <% @trades.last.trade_teams.each do |trade_team| %>
       <h4><%= Team.find(trade_team.team_id).name %> | Salary Cap: $<%= Team.find(trade_team.team_id).salary_cap %></h4>
         <% trade_team.traded_players.each do |traded_player| %>
-
         <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
     <% end %>
   <% end %>

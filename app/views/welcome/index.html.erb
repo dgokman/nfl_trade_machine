@@ -1,7 +1,5 @@
 <center><h2><%= link_to "Make a trade!", trades_path, id: "trade" %></h2></center>
 
-
-
 <% if user_signed_in? %>
 
 <h3>Your trades</h3>
@@ -9,14 +7,14 @@
   <% @trades.each do |trade| %>
     <% if trade.status %>
       <hr>
-      <h3>Trade Result: <%= trade.status %></h3>
-      <h4><%= trade.team_1_new_cap_hit %> | <%= trade.team_2_new_cap_hit %>
+      <h3 id="black"><strong>Trade Result: <%= trade.status %></strong></h3>
+      <h4 id="blue"><strong><%= trade.team_1_new_cap_hit %> | <%= trade.team_2_new_cap_hit %></strong>
         <% if trade.cap_needed %>
-          <h4 id="red">For trade to pass, cut <%= trade.cap_needed_team %> salary by $<%= trade.cap_needed %></h4>
+          <h4 id="red"><strong>For trade to pass, cut <%= trade.cap_needed_team %> post-trade salary by $<%= trade.cap_needed %></strong></h4>
         <% end %>
       <% trade.trade_teams.each do |trade_team| %>
+      <h4><%= Team.find(trade_team.team_id).name %></h4>
         <% trade_team.traded_players.each do |traded_player| %>
-          <h4><%= Team.find(trade_team.team_id).name %></h4>
           <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
         <% end %>
       <% end %>
