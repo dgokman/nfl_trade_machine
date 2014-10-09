@@ -40,20 +40,25 @@ before_action :authenticate_user!
       total_salary[team] = total
     end
     team_diff = total_salary.to_a
+    team1 = Team.find(team_diff[0][0]).name
+    team2 = Team.find(team_diff[1][0]).name
     diff = team_diff[0][1] - team_diff[1][1]
     team1_new_cap = Team.find(team_diff[0][0]).cap_hit - diff
     team2_new_cap = Team.find(team_diff[1][0]).cap_hit + diff
       if Team.find(team_diff[0][0]).salary_cap > team1_new_cap &&
         Team.find(team_diff[1][0]).salary_cap > team2_new_cap
-        @trade.update(status: "PASSED")
+        @trade.update(team_1_new_cap_hit: "#{team1} Salary Post-Trade: $#{team1_new_cap}",
+          team_2_new_cap_hit: "#{team2} Salary Post-Trade: $#{team2_new_cap}", status: "PASSED")
       elsif Team.find(team_diff[0][0]).salary_cap < team1_new_cap
         team1_cap_diff = Team.find(team_diff[0][0]).salary_cap - team1_new_cap
-        @trade.update(cap_needed_team: Team.find(team_diff[1][0]).name,
-          cap_needed: team1_cap_diff.abs, status: "FAILED")
+        @trade.update(team_1_new_cap_hit: "#{team1} Salary Post-Trade: $#{team1_new_cap}",
+          team_2_new_cap_hit: "#{team2} Salary Post-Trade: $#{team2_new_cap}",
+          cap_needed_team: team1, cap_needed: team1_cap_diff.abs, status: "FAILED")
       else
         team2_cap_diff = Team.find(team_diff[1][0]).salary_cap - team2_new_cap
-        @trade.update(cap_needed_team: Team.find(team_diff[0][0]).name,
-          cap_needed: team2_cap_diff.abs, status: "FAILED")
+        @trade.update(team_1_new_cap_hit: "#{team1} Salary Post-Trade: $#{team1_new_cap}",
+          team_2_new_cap_hit: "#{team2} Salary Post-Trade: $#{team2_new_cap}",
+          cap_needed_team: team2, cap_needed: team2_cap_diff.abs, status: "FAILED")
       end
     redirect_to trades_path
   end

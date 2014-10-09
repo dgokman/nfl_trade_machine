@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141009152128) do
+ActiveRecord::Schema.define(version: 20141009153701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,9 +46,11 @@ ActiveRecord::Schema.define(version: 20141009152128) do
     t.string  "status"
     t.integer "team_1_change"
     t.integer "team_2_change"
-    t.integer "user_id",         null: false
+    t.integer "user_id",            null: false
     t.integer "cap_needed"
     t.string  "cap_needed_team"
+    t.string  "team_1_new_cap_hit"
+    t.string  "team_2_new_cap_hit"
   end
 
   create_table "users", force: true do |t|
