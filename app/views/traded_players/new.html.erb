@@ -20,7 +20,7 @@
   </p>
 <% end %>
 
-<% if current_user.trades.last.trade_teams.length < 2 %>
+<% if current_user.trades.last.trade_teams.length < 2 && @trade_team.traded_players != [] %>
   <%= link_to "Select Another Team", trade_path(@trade) %>
 <% else %>
   <% unless @trade_team.traded_players == [] %>
