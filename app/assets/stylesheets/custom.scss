@@ -58,7 +58,7 @@ p, h1, h2, h3, h4, h5, li {
   color: white;
 }
 
-input {
+.trade {
   -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
   -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
   box-shadow:inset 0px 1px 0px 0px #f5978e;
@@ -93,13 +93,13 @@ input {
   text-align:center;
   text-shadow:1px 1px 0px #810e05;
 }
-input:hover {
+.trade:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
   background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
   background-color:#c62d1f;
 }
-.input:active {
+.trade:active {
   position:relative;
   top:1px;
 }
