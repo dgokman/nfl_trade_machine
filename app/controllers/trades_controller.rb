@@ -46,8 +46,12 @@ before_action :authenticate_user!
       if Team.find(team_diff[0][0]).salary_cap > team1_new_cap &&
         Team.find(team_diff[1][0]).salary_cap > team2_new_cap
         @trade.update(status: "passed")
+      elsif Team.find(team_diff[0][0]).salary_cap < team1_new_cap
+        team1_cap_diff = Team.find(team_diff[0][0]).salary_cap - team1_new_cap
+        @trade.update(cap_needed: team1_cap_diff.abs, status: "failed")
       else
-        @trade.update(status: "failed")
+        team2_cap_diff = Team.find(team_diff[1][0]).salary_cap - team2_new_cap
+        @trade.update(cap_needed: team2_cap_diff.abs, status: "failed")
       end
     redirect_to trades_path
   end
