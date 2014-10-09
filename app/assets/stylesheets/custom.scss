@@ -1,3 +1,19 @@
+a {
+  color: black;
+  font-size: 20px;
+}
+
+a:hover, a:active, a:visited {
+  color: #303030 ;
+}
+
+ul.title-area {
+  font-size: 24px;
+}
+
+#trade {
+  font-size: 30px;
+}
 
 ul {
   list-style-type: none;
@@ -23,10 +39,17 @@ li.name h1 a {
   margin-top: 0em;
 }
 
-#red {
-  color: red;
+.right li a {
+  color: white;
+  font-size: 14px;
 }
 
-#green {
-  color: green;
+label {
+  font-size: 18px;
+  color: black;
+}
+
+
+body {
+    background-image: url('/background.jpg');
 }
