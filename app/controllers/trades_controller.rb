@@ -39,16 +39,16 @@ before_action :authenticate_user!
       total = salary.inject { |sum, x| sum + x }
       total_salary[team] = total
     end
-    diff = []
-    total_salary.each do |team, salary|
-      diff << salary
-      total = diff.inject { |minus, x| minus - x }
-      if total == 0
+    team_diff = total_salary.to_a
+    diff = team_diff[0][1] - team_diff[1][1]
+    team1_new_cap = Team.find(team_diff[0][0]).cap_hit - diff
+    team2_new_cap = Team.find(team_diff[1][0]).cap_hit + diff
+      if Team.find(team_diff[0][0]).salary_cap > team1_new_cap &&
+        Team.find(team_diff[1][0]).salary_cap > team2_new_cap
         @trade.update(status: "passed")
       else
         @trade.update(status: "failed")
       end
-    end
     redirect_to trades_path
   end
 end
