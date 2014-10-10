@@ -22,10 +22,11 @@
     <!-- Right Nav Section -->
     <ul class="right">
     <% if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+      <li><%= link_to "Sign out", destroy_user_session_path, data: {method: 'delete'} %></li>
+      <li><%= link_to "Edit Account Information",edit_user_registration_path %></li>
     <% else %>
       <li><%= link_to "Sign in", new_user_session_path %></li>
-      <li><%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %></li>
+      <li><%= link_to "Create Account", new_user_registration_path %></li>
     <% end %>
     </ul>
 
