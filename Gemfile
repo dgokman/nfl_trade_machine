@@ -13,6 +13,8 @@ gem 'devise'
 gem 'foundation-rails', '5.4.3.1'
 gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
 gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+gem 'omniauth'
+gem 'omniauth-twitter'
 
   group :development, :test do
     gem 'spring'
