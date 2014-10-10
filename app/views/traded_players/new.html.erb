@@ -12,7 +12,7 @@
 
   <p>
     <%= f.label :player %><br>
-    <%= f.collection_select(:player_id, Player.where(team_id: @trade_team.team_id), :id, :name_salary) %>
+    <%= f.collection_select(:player_id, Player.where(team_id: @trade_team.team_id).order(:name), :id, :name) %>
   </p>
 
   <p>
