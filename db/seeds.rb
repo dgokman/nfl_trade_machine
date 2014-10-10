@@ -3417,5 +3417,663 @@ Player.create([
     position: "WR",
     team_id: 10,
     rating: 72
+  },
+  {
+    name: "Aaron Rodgers",
+    salary: 900000,
+    position: "QB",
+    team_id: 11,
+    rating: 98
+  },
+  {
+    name: "Clay Matthews",
+    salary: 1000000,
+    position: "OLB",
+    team_id: 11,
+    rating: 90
+  },
+  {
+    name: "Tramon Williams",
+    salary: 6900000,
+    position: "CB",
+    team_id: 11,
+    rating: 87
+  },
+  {
+    name: "Josh Sitton",
+    salary: 4500000,
+    position: "G",
+    team_id: 11,
+    rating: 97
+  },
+  {
+    name: "Jordy Nelson",
+    salary: 2000000,
+    position: "WR",
+    team_id: 11,
+    rating: 93
+  },
+  {
+    name: "Sam Shields",
+    salary: 1500000,
+    position: "CB",
+    team_id: 11,
+    rating: 86
+  },
+  {
+    name: "AJ Hawk",
+    salary: 2450000,
+    position: "ILB",
+    team_id: 11,
+    rating: 81
+  },
+  {
+    name: "TJ Lang",
+    salary: 3500000,
+    position: "G",
+    team_id: 11,
+    rating: 87
+  },
+  {
+    name: "Morgan Burnett",
+    salary: 1150000,
+    position: "SS",
+    team_id: 11,
+    rating: 83
+  },
+  {
+    name: "Brad Jones",
+    salary: 2500000,
+    position: "ILB",
+    team_id: 11,
+    rating: 77
+  },
+  {
+    name: "Bryan Bulaga",
+    salary: 2565000,
+    position: "RT",
+    team_id: 11,
+    rating: 86
+  },
+  {
+    name: "Michael Neal",
+    salary: 2000000,
+    position: "DE",
+    team_id: 11,
+    rating: 82
+  },
+  {
+    name: "Julius Peppers",
+    salary: 1000000,
+    position: "LB",
+    team_id: 11,
+    rating: 82
+  },
+  {
+    name: "Mason Crosby",
+    salary: 2650000,
+    position: "K",
+    team_id: 11,
+    rating: 82
+  },
+  {
+    name: "Derek Sherrod",
+    salary: 1275000,
+    position: "RT",
+    team_id: 11,
+    rating: 76
+  },
+  {
+    name: "Nick Perry",
+    salary: 1071750,
+    position: "OLB",
+    team_id: 11,
+    rating: 76
+  },
+  {
+    name: "Jarrett Bush",
+    salary: 2000000,
+    position: "CB",
+    team_id: 11,
+    rating: 74
+  },
+  {
+    name: "Datone Jones",
+    salary: 755754,
+    position: "DE",
+    team_id: 11,
+    rating: 77
+  },
+  {
+    name: "HaHa Clinton-Dix",
+    salary: 420000,
+    position: "S",
+    team_id: 11,
+    rating: 79
+  },
+  {
+    name: "Jamari Lattimore",
+    salary: 1431000,
+    position: "ILB",
+    team_id: 11,
+    rating: 67
+  },
+  {
+    name: "James Starks",
+    salary: 750000,
+    position: "RB",
+    team_id: 11,
+    rating: 78
+  },
+  {
+    name: "Andrew Quarless",
+    salary: 800000,
+    position: "TE",
+    team_id: 11,
+    rating: 74
+  },
+  {
+    name: "Tim Masthay",
+    salary: 900000,
+    position: "P",
+    team_id: 11,
+    rating: 72
+  },
+  {
+    name: "Matt Flynn",
+    salary: 730000,
+    position: "QB",
+    team_id: 11,
+    rating: 78
+  },
+  {
+    name: "John Kuhn",
+    salary: 855000,
+    position: "FB",
+    team_id: 11,
+    rating: 93
+  },
+  {
+    name: "Randall Cobb",
+    salary: 812648,
+    position: "WR",
+    team_id: 11,
+    rating: 89
+  },
+  {
+    name: "Letroy Guion",
+    salary: 730000,
+    position: "DT",
+    team_id: 11,
+    rating: 75
+  },
+  {
+    name: "Casey Hayward",
+    salary: 690901,
+    position: "CB",
+    team_id: 11,
+    rating: 85
+  },
+  {
+    name: "Brett Goode",
+    salary: 730000,
+    position: "LS",
+    team_id: 11,
+    rating: 63
+  },
+  {
+    name: "Eddie Lacy",
+    salary: 559201,
+    position: "RB",
+    team_id: 11,
+    rating: 87
+  },
+  {
+    name: "Davon House",
+    salary: 645000,
+    position: "CB",
+    team_id: 11,
+    rating: 74
+  },
+  {
+    name: "Davante Adams",
+    salary: 420000,
+    position: "WR",
+    team_id: 11,
+    rating: 72
+  },
+  {
+    name: "Mike Daniels",
+    salary: 570000,
+    position: "DE",
+    team_id: 11,
+    rating: 75
+  },
+  {
+    name: "DuJuan Harris",
+    salary: 645000,
+    position: "RB",
+    team_id: 11,
+    rating: 74
+  },
+  {
+    name: "Scott Tolzien",
+    salary: 645000,
+    position: "QB",
+    team_id: 11,
+    rating: 71
+  },
+  {
+    name: "David Bakhtiari",
+    salary: 495000,
+    position: "LT",
+    team_id: 11,
+    rating: 76
+  },
+  {
+    name: "Sean Richardson",
+    salary: 570000,
+    position: "S",
+    team_id: 11,
+    rating: 69
+  },
+  {
+    name: "Jarrett Boykin",
+    salary: 570000,
+    position: "WR",
+    team_id: 11,
+    rating: 78
+  },
+  {
+    name: "Richard Rodgers",
+    salary: 420000,
+    position: "TE",
+    team_id: 11,
+    rating: 67
+  },
+  {
+    name: "Micah Hyde",
+    salary: 495000,
+    position: "S",
+    team_id: 11,
+    rating: 75
+  },
+  {
+    name: "Josh Boyd",
+    salary: 495000,
+    position: "DT",
+    team_id: 11,
+    rating: 71
+  },
+  {
+    name: "Carl Bradford",
+    salary: 420000,
+    position: "OLB",
+    team_id: 11,
+    rating: 65
+  },
+  {
+    name: "Sam Barrington",
+    salary: 495000,
+    position: "ILB",
+    team_id: 11,
+    rating: 65
+  },
+  {
+    name: "Lane Taylor",
+    salary: 495000,
+    position: "G",
+    team_id: 11,
+    rating: 63
+  },
+  {
+    name: "Brandon Bostick",
+    salary: 495000,
+    position: "TE",
+    team_id: 11,
+    rating: 72
+  },
+  {
+    name: "Corey Linsley",
+    salary: 420000,
+    position: "C",
+    team_id: 11,
+    rating: 70
+  },
+  {
+    name: "Demetri Goodson",
+    salary: 420000,
+    position: "CB",
+    team_id: 11,
+    rating: 66
+  },
+  {
+    name: "Jeff Janis",
+    salary: 420000,
+    position: "WR",
+    team_id: 11,
+    rating: 63
+  },
+  {
+    name: "Gath Gerhart",
+    salary: 420000,
+    position: "C",
+    team_id: 11,
+    rating: 66
+  },
+  {
+    name: "Kevin Dorsey",
+    salary: 420000,
+    position: "WR",
+    team_id: 11,
+    rating: 63
+  },
+  {
+    name: "Gerald McCoy",
+    salary: 12732253,
+    position: "DT",
+    team_id: 12,
+    rating: 95
+  },
+  {
+    name: "Vincent Jackson",
+    salary: 10000000,
+    position: "WR",
+    team_id: 12,
+    rating: 92
+  },
+  {
+    name: "Michael Johnson",
+    salary: 5000000,
+    position: "DE",
+    team_id: 12,
+    rating: 91
+  },
+  {
+    name: "Dashon Goldson",
+    salary: 6000000,
+    position: "S",
+    team_id: 12,
+    rating: 81
+  },
+  {
+    name: "Alterraun Verner",
+    salary: 5000000,
+    position: "CB",
+    team_id: 12,
+    rating: 87
+  },
+  {
+    name: "Logan Mankins",
+    salary: 6250000,
+    position: "G",
+    team_id: 12,
+    rating: 90
+  },
+  {
+    name: "Anthony Collins",
+    salary: 4000000,
+    position: "LT",
+    team_id: 12,
+    rating: 84
+  },
+  {
+    name: "Josh McCown",
+    salary: 3750000,
+    position: "QB",
+    team_id: 12,
+    rating: 83
+  },
+  {
+    name: "Mark Barron",
+    salary: 1705000,
+    position: "S",
+    team_id: 12,
+    rating: 82
+  },
+  {
+    name: "Evan Dietrich-Smith",
+    salary: 2500000,
+    position: "C",
+    team_id: 12,
+    rating: 82
+  },
+  {
+    name: "Clinton McDonald",
+    salary: 3000000,
+    position: "DT",
+    team_id: 12,
+    rating: 77
+  },
+  {
+    name: "Michael Koenen",
+    salary: 3250000,
+    position: "P",
+    team_id: 12,
+    rating: 78
+  },
+  {
+    name: "Mike Evans",
+    salary: 420000,
+    position: "WR",
+    team_id: 12,
+    rating: 78
+  },
+  {
+    name: "Brandon Myers",
+    salary: 2000000,
+    position: "TE",
+    team_id: 12,
+    rating: 77
+  },
+  {
+    name: "Demar Dotson",
+    salary: 2000000,
+    position: "RT",
+    team_id: 12,
+    rating: 85
+  },
+  {
+    name: "Doug Martin",
+    salary: 1007048,
+    position: "RB",
+    team_id: 12,
+    rating: 89
+  },
+  {
+    name: "Mason Foster",
+    salary: 1431000,
+    position: "ILB",
+    team_id: 12,
+    rating: 75
+  },
+  {
+    name: "Jonathan Casillas",
+    salary: 1100000,
+    position: "S",
+    team_id: 12,
+    rating: 75
+  },
+  {
+    name: "Da'Quan Bowers",
+    salary: 900768,
+    position: "DT",
+    team_id: 12,
+    rating: 70
+  },
+  {
+    name: "Dane Fletcher",
+    salary: 800000,
+    position: "ILB",
+    team_id: 12,
+    rating: 74
+  },
+  {
+    name: "Jonathan Banks",
+    salary: 619833,
+    position: "CB",
+    team_id: 12,
+    rating: 75
+  },
+  {
+    name: "Austin Seferian-Jenkins",
+    salary: 420000,
+    position: "TE",
+    team_id: 12,
+    rating: 75
+  },
+  {
+    name: "Lavonte David",
+    salary: 705612,
+    position: "S",
+    team_id: 12,
+    rating: 93
+  },
+  {
+    name: "Luke Stocker",
+    salary: 645000,
+    position: "TE",
+    team_id: 12,
+    rating: 75
+  },
+  {
+    name: "Mike Glennon",
+    salary: 546094,
+    position: "QB",
+    team_id: 12,
+    rating: 79
+  },
+  {
+    name: "Oniel Cousins",
+    salary: 730000,
+    position: "G",
+    team_id: 12,
+    rating: 67
+  },
+  {
+    name: "Akeem Spence",
+    salary: 495000,
+    position: "DT",
+    team_id: 12,
+    rating: 71
+  },
+  {
+    name: "Keith Tandy",
+    salary: 575000,
+    position: "CB",
+    team_id: 12,
+    rating: 70
+  },
+  {
+    name: "William Gholston",
+    salary: 495000,
+    position: "S",
+    team_id: 12,
+    rating: 70
+  },
+  {
+    name: "Leonard Johnson",
+    salary: 570000,
+    position: "CB",
+    team_id: 12,
+    rating: 73
+  },
+  {
+    name: "Major Wright",
+    salary: 730000,
+    position: "S",
+    team_id: 12,
+    rating: 78
+  },
+  {
+    name: "Danny Lansanah",
+    salary: 570000,
+    position: "OLB",
+    team_id: 12,
+    rating: 64
+  },
+  {
+    name: "Bobby Rainey",
+    salary: 570000,
+    position: "RB",
+    team_id: 12,
+    rating: 73
+  },
+  {
+    name: "Scott Solomon",
+    salary: 570000,
+    position: "DE",
+    team_id: 12,
+    rating: 67
+  },
+  {
+    name: "Mike James",
+    salary: 495000,
+    position: "RB",
+    team_id: 12,
+    rating: 75
+  },
+  {
+    name: "Jorvorskie Lane",
+    salary: 495000,
+    position: "FB",
+    team_id: 12,
+    rating: 73
+  },
+  {
+    name: "Bradley McDougald",
+    salary: 495000,
+    position: "FS",
+    team_id: 12,
+    rating: 64
+  },
+  {
+    name: "Patrick Omameh",
+    salary: 495000,
+    position: "RG",
+    team_id: 12,
+    rating: 68
+  },
+  {
+    name: "Russell Shepard",
+    salary: 495000,
+    position: "WR",
+    team_id: 12,
+    rating: 68
+  },
+  {
+    name: "Kadeem Edwards",
+    salary: 420000,
+    position: "LG",
+    team_id: 12,
+    rating: 66
+  },
+  {
+    name: "Kevin Pamphile",
+    salary: 420000,
+    position: "LT",
+    team_id: 12,
+    rating: 66
+  },
+  {
+    name: "Louis Murphy",
+    salary: 601176,
+    position: "WR",
+    team_id: 12,
+    rating: 74
+  },
+  {
+    name: "Mike Kafka",
+    salary: 570000,
+    position: "QB",
+    team_id: 12,
+    rating: 71
+  },
+  {
+    name: "Robert Herron",
+    salary: 420000,
+    position: "WR",
+    team_id: 12,
+    rating: 68
   }
   ])
