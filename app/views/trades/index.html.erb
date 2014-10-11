@@ -25,7 +25,7 @@
     <h4 id="red"><strong>For trade to pass, cut <%= @trades.last.cap_needed_team %> post-trade salary by $<%= @trades.last.cap_needed %></strong></h4>
     <% end %>
     <% @trades.last.trade_teams.each do |trade_team| %>
-      <h4><%= Team.find(trade_team.team_id).name %> | Salary Cap: $<%= Team.find(trade_team.team_id).salary_cap %></h4>
+      <h4><img src="<%= Team.find(trade_team.team_id).logo %>"/> <%= Team.find(trade_team.team_id).name %> | Salary Cap: $<%= Team.find(trade_team.team_id).salary_cap %></h4>
         <% trade_team.traded_players.each do |traded_player| %>
         <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | $<%= Player.find(traded_player.player_id).salary %></h5>
     <% end %>
