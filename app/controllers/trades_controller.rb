@@ -1,5 +1,6 @@
 class TradesController < ApplicationController
 before_action :authenticate_user!
+include ActionView::Helpers::NumberHelper
 
   def index
     @trade = Trade.new
@@ -45,19 +46,21 @@ before_action :authenticate_user!
     diff = team_diff[0][1] - team_diff[1][1]
     team1_new_cap = Team.find(team_diff[0][0]).cap_hit - diff
     team2_new_cap = Team.find(team_diff[1][0]).cap_hit + diff
+    team1_new_cap_curr = number_to_currency(team1_new_cap, precision: 0)
+    team2_new_cap_curr = number_to_currency(team2_new_cap, precision: 0)
       if Team.find(team_diff[0][0]).salary_cap > team1_new_cap &&
         Team.find(team_diff[1][0]).salary_cap > team2_new_cap
-        @trade.update(team_1_new_cap_hit: "#{team1} total salary post-trade: $#{team1_new_cap}",
-          team_2_new_cap_hit: "#{team2} total salary post-trade: $#{team2_new_cap}", status: "PASSED")
+        @trade.update(team_1_new_cap_hit: "#{team1} total salary post-trade: #{team1_new_cap_curr}",
+          team_2_new_cap_hit: "#{team2} total salary post-trade: #{team2_new_cap_curr}", status: "PASSED")
       elsif Team.find(team_diff[0][0]).salary_cap < team1_new_cap
         team1_cap_diff = Team.find(team_diff[0][0]).salary_cap - team1_new_cap
-        @trade.update(team_1_new_cap_hit: "#{team1} total salary post-trade: $#{team1_new_cap}",
-          team_2_new_cap_hit: "#{team2} total salary post-trade: $#{team2_new_cap}",
+        @trade.update(team_1_new_cap_hit: "#{team1} total salary post-trade: #{team1_new_cap_curr}",
+          team_2_new_cap_hit: "#{team2} total salary post-trade: #{team2_new_cap_curr}",
           cap_needed_team: team1, cap_needed: team1_cap_diff.abs, status: "FAILED")
       else
         team2_cap_diff = Team.find(team_diff[1][0]).salary_cap - team2_new_cap
-        @trade.update(team_1_new_cap_hit: "#{team1} total salary post-trade: $#{team1_new_cap}",
-          team_2_new_cap_hit: "#{team2} total salary post-trade: $#{team2_new_cap}",
+        @trade.update(team_1_new_cap_hit: "#{team1} total salary post-trade: #{team1_new_cap_curr}",
+          team_2_new_cap_hit: "#{team2} total salary post-trade: #{team2_new_cap_curr}",
           cap_needed_team: team2, cap_needed: team2_cap_diff.abs, status: "FAILED")
       end
     redirect_to trades_path
