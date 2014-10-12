@@ -22,7 +22,7 @@
   <h3 id="black"><strong>Trade Result: <%= @trades.last.status %></strong></h3>
     <h4 id="blue"><strong><%= @trades.last.team_1_new_cap_hit %> | <%= @trades.last.team_2_new_cap_hit %></strong>
     <% if @trades.last.cap_needed %></h4>
-    <h4 id="red"><strong>For trade to pass, cut <%= @trades.last.cap_needed_team %> post-trade salary by <%= number_to_currency(@trades.last.cap_needed, precision: 0) %></strong></h4>
+    <h4 id="red"><strong>For trade to pass, cut <%= @trades.last.cap_needed_team %> post-trade salary by $<%= @trades.last.cap_needed %></strong></h4>
     <% end %>
     <% @trades.last.trade_teams.each do |trade_team| %>
       <h4><img src="<%= Team.find(trade_team.team_id).logo %>"/> <%= Team.find(trade_team.team_id).name %> (Salary Cap: <%= number_to_currency(Team.find(trade_team.team_id).salary_cap, precision: 0) %>) trade: </h4>
