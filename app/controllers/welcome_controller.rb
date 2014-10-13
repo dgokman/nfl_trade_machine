@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
+    @trade = Trade.new
     if user_signed_in?
       @trades = Trade.where(user_id: current_user.id).order(id: :desc)
     end
