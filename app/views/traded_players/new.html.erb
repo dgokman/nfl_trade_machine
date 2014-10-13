@@ -24,6 +24,10 @@
   <%= link_to "Select Another Team", trade_path(@trade) %>
 <% else %>
   <% unless @trade_team.traded_players == [] %>
-    <%= link_to "Finish Trade", trade_path(@trade) %>
+    <%= form_for @trade_team.trade do |f| %>
+    <p>
+      <%= f.submit "Submit Trade", class: 'trade' %>
+    </p>
+    <% end %>
   <% end %>
 <% end %>

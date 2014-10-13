@@ -22,11 +22,3 @@
     </p>
   <% end %>
 <% end %>
-
-<% if current_user.trades.last.trade_teams.length >= 2 %>
-  <%= form_for @trade do |f| %>
-  <p>
-    <%= f.submit "Submit Trade", class: 'trade' %>
-  </p>
-  <% end %>
-<% end %>
