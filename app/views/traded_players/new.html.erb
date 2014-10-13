@@ -12,7 +12,7 @@
   <p>Note: Listed salary is only the player's Base Salary, which is transferred over to the new team during a trade. It does not include Signing Bonus, Roster Bonus, etc. which will still be owed to the player by the original team.</p>
   <p>
     <%= f.label :player %><br>
-    <%= f.collection_select(:player_id, Player.where(team_id: @trade_team.team_id).order(salary: :desc), :id, :name_salary) %>
+    <%= f.collection_select(:player_id, @trade_team.team.players.order(salary: :desc), :id, :name_salary) %>
   </p>
 
   <p>

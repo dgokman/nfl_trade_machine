@@ -25,9 +25,9 @@
         <h4 id="red"><strong>For trade to pass, cut <%= trade.cap_needed_team %> post-trade salary by <%= number_to_currency(trade.cap_needed, precision: 0) %></strong></h4>
       <% end %>
       <% trade.trade_teams.each do |trade_team| %>
-      <h4><img src="<%= Team.find(trade_team.team_id).logo %>"/> <%= Team.find(trade_team.team_id).name %> (Salary Cap: <%= number_to_currency(Team.find(trade_team.team_id).salary_cap, precision: 0) %>) trades:</h4>
+      <h4><img src="<%= trade_team.team.logo %>"/> <%= trade_team.team.name %> (Salary Cap: <%= number_to_currency(trade_team.team.salary_cap, precision: 0) %>) trades:</h4>
         <% trade_team.traded_players.each do |traded_player| %>
-          <h5><%= Player.find(traded_player.player_id).name %> | <%= Player.find(traded_player.player_id).position %> | <%= number_to_currency(Player.find(traded_player.player_id).salary, precision: 0) %></h5>
+          <h5><%= traded_player.player.name %> | <%= traded_player.player.position %> | <%= number_to_currency(traded_player.player.salary, precision: 0) %></h5>
         <% end %>
       <% end %>
     <% end %>

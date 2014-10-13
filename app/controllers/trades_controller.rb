@@ -8,6 +8,7 @@ include ActionView::Helpers::NumberHelper
   end
 
   def show
+    @teams = Team.all
     @trade = Trade.find(params[:id])
     @trade_team = TradeTeam.new
   end

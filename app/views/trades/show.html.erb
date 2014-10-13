@@ -13,7 +13,7 @@
 
     <p>
       <%= f.label :team %><br>
-      <%= f.collection_select(:team_id, Team.order(:name), :id, :name) %>
+      <%= f.collection_select(:team_id, @teams.order(:name), :id, :name) %>
     </p>
 
 
