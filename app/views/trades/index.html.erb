@@ -20,8 +20,11 @@
 <% unless @trades == [] || @trades.last.status.nil? || current_user.trades.last.trade_teams.length < 2 %>
 <hr>
   <h3 id="black"><strong>Trade Result: <%= @trades.last.status %></strong></h3>
-    <h4 id="blue"><strong><%= @trades.last.team_1_new_cap_hit %> | <%= @trades.last.team_2_new_cap_hit %></strong>
-    <% if @trades.last.cap_needed %></h4>
+    <h4 id="blue"><strong><%= @trades.last.team_1_new_cap_hit %> | <%= @trades.last.team_2_new_cap_hit %></strong></h4>
+    <% if @trades.last.team_1_change %>
+    <h4 id="blue"><strong><%= @trades.last.team_1_change %> | <%= @trades.last.team_2_change %></strong></h4>
+    <% end %>
+    <% if @trades.last.cap_needed %>
     <h4 id="red"><strong>For trade to pass, cut <%= @trades.last.cap_needed_team %> post-trade salary by <%= number_to_currency(@trades.last.cap_needed, precision: 0) %></strong></h4>
     <% end %>
     <% @trades.last.trade_teams.each do |trade_team| %>

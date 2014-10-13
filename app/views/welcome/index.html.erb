@@ -15,9 +15,12 @@
       <hr>
       <h3 id="black"><strong>Trade Result: <%= trade.status %></strong></h3>
       <h4 id="blue"><strong><%= trade.team_1_new_cap_hit %> | <%= trade.team_2_new_cap_hit %></strong>
-        <% if trade.cap_needed %>
-          <h4 id="red"><strong>For trade to pass, cut <%= trade.cap_needed_team %> post-trade salary by <%= number_to_currency(trade.cap_needed, precision: 0) %></strong></h4>
-        <% end %>
+      <% if trade.team_1_change %>
+        <h4 id="blue"><strong><%= trade.team_1_change %> | <%= trade.team_2_change %></strong></h4>
+      <% end %>
+      <% if trade.cap_needed %>
+        <h4 id="red"><strong>For trade to pass, cut <%= trade.cap_needed_team %> post-trade salary by <%= number_to_currency(trade.cap_needed, precision: 0) %></strong></h4>
+      <% end %>
       <% trade.trade_teams.each do |trade_team| %>
       <h4><img src="<%= Team.find(trade_team.team_id).logo %>"/> <%= Team.find(trade_team.team_id).name %> (Salary Cap: <%= number_to_currency(Team.find(trade_team.team_id).salary_cap, precision: 0) %>) trades:</h4>
         <% trade_team.traded_players.each do |traded_player| %>
