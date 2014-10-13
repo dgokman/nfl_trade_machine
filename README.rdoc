@@ -1,5 +1,5 @@
-== README
-NFL TRADE MACHINE
+== NFL TRADE MACHINE
 
 Make trades between NFL teams using real players and salary data. Trades get analyzed based on available cap room and team improvement/decline
+
 http://nfl-trade-machine.herokuapp.com
