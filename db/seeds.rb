@@ -2,198 +2,202 @@ User.create([
   {
     email: "dennis@gmail.com",
     password: "password123"
+  },
+  {
+    email: "test@test.com",
+    password: "password123"
   }
 ])
 
 Team.create([
   {
-    name: "Jacksonville Jaguars",
+    name: "Jacksonville",
     cap_hit: 122775565,
     salary_cap: 151775494,
     logo: "logos/jaguars.png"
   },
   {
-    name: "New York Jets",
+    name: "New York (A)",
     cap_hit: 110326475,
     salary_cap: 134109240,
     logo: "logos/jets.png"
   },
   {
-    name: "Cleveland Browns",
+    name: "Cleveland",
     cap_hit: 135098344,
     salary_cap: 156917756,
     logo: "logos/cleveland.png"
   },
   {
-    name: "Philadelphia Eagles",
+    name: "Philadelphia",
     cap_hit: 133901850,
     salary_cap: 149299949,
     logo: "logos/eagles1.png"
   },
   {
-    name: "Tennessee Titans",
+    name: "Tennessee",
     cap_hit: 126222734,
     salary_cap: 138905811,
     logo: "logos/tennessee.png"
   },
   {
-    name: "Pittsburgh Steelers",
+    name: "Pittsburgh",
     cap_hit: 121996101,
     salary_cap: 134109240,
     logo: "logos/pitt.png"
   },
   {
-    name: "Indianapolis Colts",
+    name: "Indianapolis",
     cap_hit: 122025328,
     salary_cap: 133353095,
     logo: "logos/indianapolis.png"
   },
   {
-    name: "Cincinnati Bengals",
+    name: "Cincinnati",
     cap_hit: 131132185,
     salary_cap: 141663480,
     logo: "logos/cincinnati.png"
   },
   {
-    name: "New England Patriots",
+    name: "New England",
     cap_hit: 128946405,
     salary_cap: 139109051,
     logo: "logos/patriots.png"
   },
   {
-    name: "Miami Dolphins",
+    name: "Miami",
     cap_hit: 141645662,
     salary_cap: 150622413,
     logo: "logos/dolphins.png"
   },
   {
-    name: "Green Bay Packers",
+    name: "Green Bay",
     cap_hit: 134073534,
     salary_cap: 141821209,
     logo: "logos/greenbay.png"
   },
   {
-    name: "Tampa Bay Buccaneers",
+    name: "Tampa Bay",
     cap_hit: 132029815,
     salary_cap: 139336781,
     logo: "logos/tampa1.png"
   },
   {
-    name: "Carolina Panthers",
+    name: "Carolina",
     cap_hit: 131529489,
     salary_cap: 138674934,
     logo: "logos/panthers.png"
   },
   {
-    name: "Oakland Raiders",
+    name: "Oakland",
     cap_hit: 123828630,
     salary_cap: 130907903,
     logo: "logos/oakland.png"
   },
   {
-    name: "Baltimore Ravens",
+    name: "Baltimore",
     cap_hit: 125755721,
     salary_cap: 131585925,
     logo: "logos/baltimore.png"
   },
   {
-    name: "Arizona Cardinals",
+    name: "Arizona",
     cap_hit: 131614762,
     salary_cap: 137348653,
     logo: "logos/arizona1.png"
   },
   {
-    name: "Minnesota Vikings",
+    name: "Minnesota",
     cap_hit: 128383637,
     salary_cap: 133535517,
     logo: "logos/vikings.png"
   },
   {
-    name: "Kansas City Chiefs",
+    name: "Kansas City",
     cap_hit: 129428389,
     salary_cap: 134468143,
     logo: "logos/kansascity.png"
   },
   {
-    name: "San Francisco 49ers",
+    name: "San Francisco",
     cap_hit: 130695022,
     salary_cap: 135483783,
     logo: "logos/49erslogo.png"
   },
   {
-    name: "Denver Broncos",
+    name: "Denver",
     cap_hit: 132175598,
     salary_cap: 136249698,
     logo: "logos/denver.png"
   },
   {
-    name: "Buffalo Bills",
+    name: "Buffalo",
     cap_hit: 146607219,
     salary_cap: 150584740,
     logo: "logos/buffalo.png"
   },
   {
-    name: "Atlanta Falcons",
+    name: "Atlanta",
     cap_hit: 131828733,
     salary_cap: 135743934,
     logo: "logos/atlanta.png"
   },
   {
-    name: "Dallas Cowboys",
+    name: "Dallas",
     cap_hit: 130008929,
     salary_cap: 133874928,
     logo: "logos/dallas.png"
   },
   {
-    name: "Houston Texans",
+    name: "Houston",
     cap_hit: 130825152,
     salary_cap: 134463230,
-    logo: "logos/dallas.png"
+    logo: "logos/houston.png"
   },
   {
-    name: "Chicago Bears",
+    name: "Chicago",
     cap_hit: 129964499,
     salary_cap: 133006955,
     logo: "logos/chicago.png"
   },
   {
-    name: "Seattle Seahawks",
+    name: "Seattle",
     cap_hit: 132855511,
     salary_cap: 135866540,
     logo: "logos/hawks3.png"
   },
   {
-    name: "New York Giants",
+    name: "New York (N)",
     cap_hit: 129127969,
     salary_cap: 132015946,
     logo: "logos/nygiants.png"
   },
   {
-    name: "New Orleans Saints",
+    name: "New Orleans",
     cap_hit: 130058196,
     salary_cap: 132784917,
     logo: "logos/neworleans.png"
   },
   {
-    name: "San Diego Chargers",
+    name: "San Diego",
     cap_hit: 133659055,
     salary_cap: 135127841,
     logo: "logos/chargers2.png"
   },
   {
-    name: "Detroit Lions",
+    name: "Detroit",
     cap_hit: 130772304,
     salary_cap: 132222552,
     logo: "logos/detroit.png"
   },
   {
-    name: "St. Louis Rams",
+    name: "St. Louis",
     cap_hit: 131284671,
     salary_cap: 131823529,
     logo: "logos/rams2.png"
   },
   {
-    name: "Washington Redskins",
+    name: "Washington",
     cap_hit: 131306384,
     salary_cap: 131661268,
     logo: "logos/washington.png"

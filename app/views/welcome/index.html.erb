@@ -1,4 +1,8 @@
 <% unless user_signed_in? %>
+  <% @teams.each do |team| %>
+    <img src="<%= team.logo %>"/>
+  <% end %>
+  <br><br>
 <ol>
   <h4>Instructions:<br><br>
       <li><%= link_to "Create an account", new_user_registration_path %> or
@@ -8,6 +12,10 @@
       <li>Submit trade! It will then be evaluated to see if it would pass based on current NFL salary data, and each team's improvement/decline will be measured</li>
   </h4>
 </ol>
+  <br><br>
+  <div id="contact"><strong>
+  <a href="mailto:nfltrademachine@gmail.com">Email the Machine</a><br>
+  Salary Data sourced from <a href="http://www.spotrac.com/nfl/" target="_blank">Spotrac</a></div></strong>
 <% else %>
 <%= form_for @trade do |f| %>
   <% if @trade.errors.any? %>
@@ -47,3 +55,5 @@
     <% end %>
   <% end %>
 <% end %>
+
+
