@@ -1,8 +1,14 @@
 <center><h2><%= link_to "Make a trade!", trades_path, id: "trade" %></h2></center>
 
-<% if user_signed_in? %>
-
-<h3>Your trades</h3>
+<% unless user_signed_in? %>
+  <h4>Instructions:<br>
+          <li>Create an account or login with Twitter</li>
+          <li>Select a team, then select the player(s) you want to trade</li>
+          <li>Select another team, then select the player(s) you want to trade to the original team. (Only 2 team trades are allowed at this time.)</li>
+          <li>Submit trade! It will then be evaluated to see if it would pass based on current NFL salary data, and each team's improvement/decline will be measured</li>
+         </h4>
+<% else %>
+  <h3>Your trades</h3>
 
   <% @trades.each do |trade| %>
     <% if trade.status %>
