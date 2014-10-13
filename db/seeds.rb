@@ -69,7 +69,7 @@ Team.create([
   {
     name: "Green Bay Packers",
     cap_hit: 134073534,
-    salary_cap: 133353095,
+    salary_cap: 141821209,
     logo: "logos/greenbay.png"
   },
   {
@@ -5805,7 +5805,7 @@ Player.create([
   {
     name: "Chase Daniel",
     salary: 2350000,
-    position: "RB",
+    position: "QB",
     team_id: 18,
     rating: 76
   },
