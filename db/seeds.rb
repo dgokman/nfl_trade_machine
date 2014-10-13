@@ -190,13 +190,13 @@ Team.create([
     name: "St. Louis Rams",
     cap_hit: 131284671,
     salary_cap: 131823529,
-    logo: "logo/rams2.png"
+    logo: "logos/rams2.png"
   },
   {
     name: "Washington Redskins",
     cap_hit: 131306384,
     salary_cap: 131661268,
-    logo: "logo/washington.png"
+    logo: "logos/washington.png"
   }
   ])
 
@@ -7698,5 +7698,2917 @@ Player.create([
     position: "S",
     team_id: 23,
     rating: 65
+  },
+  {
+    name: "Andre Johnson",
+    salary: 10000000,
+    position: "WR",
+    team_id: 24,
+    rating: 95
+  },
+   {
+    name: "Jonathan Joseph",
+    salary: 7500000,
+    position: "CB",
+    team_id: 24,
+    rating: 88
+  },
+  {
+    name: "Arian Foster",
+    salary: 5750000,
+    position: "RB",
+    team_id: 24,
+    rating: 91
+  },
+  {
+    name: "Duane Brown",
+    salary: 6000000,
+    position: "LT",
+    team_id: 24,
+    rating: 93
+  },
+  {
+    name: "Chris Myers",
+    salary: 5000000,
+    position: "LT",
+    team_id: 24,
+    rating: 88
+  },
+  {
+    name: "Brian Cushing",
+    salary: 2000000,
+    position: "ILB",
+    team_id: 24,
+    rating: 91
+  },
+  {
+    name: "JJ Watt",
+    salary: 907385,
+    position: "DE",
+    team_id: 24,
+    rating: 99
+  },
+   {
+    name: "Kareem Jackson",
+    salary: 3090000,
+    position: "CB",
+    team_id: 24,
+    rating: 81
+  },
+  {
+    name: "Jadeveon Clowney",
+    salary: 5750000,
+    position: "OLB",
+    team_id: 24,
+    rating: 83
+  },
+  {
+    name: "Ryan Fitzpatrick",
+    salary: 1750000,
+    position: "QB",
+    team_id: 24,
+    rating: 80
+  },
+  {
+    name: "Garrett Graham",
+    salary: 1000000,
+    position: "LT",
+    team_id: 24,
+    rating: 76
+  },
+  {
+    name: "Shane Lechler",
+    salary: 1750000,
+    position: "P",
+    team_id: 24,
+    rating: 92
+  },
+  {
+    name: "Whitney Mercilus",
+    salary: 1084008,
+    position: "OLB",
+    team_id: 24,
+    rating: 72
+  },
+   {
+    name: "DeAndre Hopkins",
+    salary: 751668,
+    position: "WR",
+    team_id: 24,
+    rating: 75
+  },
+  {
+    name: "Brooks Reed",
+    salary: 1016148,
+    position: "OLB",
+    team_id: 24,
+    rating: 78
+  },
+  {
+    name: "Derek Newton",
+    salary: 1431000,
+    position: "RT",
+    team_id: 24,
+    rating: 73
+  },
+  {
+    name: "Tyson Clabo",
+    salary: 900000,
+    position: "RT",
+    team_id: 24,
+    rating: 75
+  },
+  {
+    name: "Xavier Su'a-Filo",
+    salary: 420000,
+    position: "G",
+    team_id: 24,
+    rating: 76
+  },
+  {
+    name: "Tim Jamison",
+    salary: 730000,
+    position: "DE",
+    team_id: 24,
+    rating: 74
+  },
+   {
+    name: "DeVier Posey",
+    salary: 630000,
+    position: "WR",
+    team_id: 24,
+    rating: 68
+  },
+  {
+    name: "Jon Weeks",
+    salary: 730000,
+    position: "LS",
+    team_id: 24,
+    rating: 49
+  },
+  {
+    name: "DJ Swearinger",
+    salary: 563695,
+    position: "S",
+    team_id: 24,
+    rating: 76
+  },
+  {
+    name: "Ryan Mallett",
+    salary: 776976,
+    position: "QB",
+    team_id: 24,
+    rating: 74
+  },
+  {
+    name: "Brandon Brooks",
+    salary: 590000,
+    position: "G",
+    team_id: 24,
+    rating: 83
+  },
+  {
+    name: "Ben Jones",
+    salary: 570000,
+    position: "G",
+    team_id: 24,
+    rating: 73
+  },
+   {
+    name: "Keshawn Martin",
+    salary: 570000,
+    position: "WR",
+    team_id: 24,
+    rating: 71
+  },
+  {
+    name: "Jared Crick",
+    salary: 570000,
+    position: "DE",
+    team_id: 24,
+    rating: 71
+  },
+  {
+    name: "Jerrell Powe",
+    salary: 570000,
+    position: "DT",
+    team_id: 24,
+    rating: 72
+  },
+  {
+    name: "Jeff Tarpinian",
+    salary: 645000,
+    position: "OLB",
+    team_id: 24,
+    rating: 69
+  },
+  {
+    name: "Elbert Mack",
+    salary: 730000,
+    position: "CB",
+    team_id: 24,
+    rating: 69
+  },
+  {
+    name: "Kendrick Lewis",
+    salary: 730000,
+    position: "S",
+    team_id: 24,
+    rating: 80
+  },
+   {
+    name: "Randy Bullock",
+    salary: 570000,
+    position: "K",
+    team_id: 24,
+    rating: 61
+  },
+  {
+    name: "C.J. Fiedorowicz",
+    salary: 420000,
+    position: "TE",
+    team_id: 24,
+    rating: 72
+  },
+  {
+    name: "Danieal Manning",
+    salary: 855000,
+    position: "S",
+    team_id: 24,
+    rating: 76
+  },
+  {
+    name: "Damaris Johnson",
+    salary: 570000,
+    position: "WR",
+    team_id: 24,
+    rating: 71
+  },
+  {
+    name: "Mike Mohamed",
+    salary: 570000,
+    position: "ILB",
+    team_id: 24,
+    rating: 63
+  },
+  {
+    name: "Ryan Griffin",
+    salary: 495000,
+    position: "TE",
+    team_id: 24,
+    rating: 75
+  },
+   {
+    name: "AJ Bouye",
+    salary: 495000,
+    position: "CB",
+    team_id: 24,
+    rating: 65
+  },
+  {
+    name: "Justin Tuggle",
+    salary: 495000,
+    position: "ILB",
+    team_id: 24,
+    rating: 63
+  },
+  {
+    name: "Tom Savage",
+    salary: 420000,
+    position: "QB",
+    team_id: 24,
+    rating: 70
+  },
+  {
+    name: "Jonathan Grimes",
+    salary: 495000,
+    position: "RB",
+    team_id: 24,
+    rating: 68
+  },
+  {
+    name: "Eddie Pleasant",
+    salary: 495000,
+    position: "S",
+    team_id: 24,
+    rating: 72
+  },
+  {
+    name: "Ryan Pickett",
+    salary: 955000,
+    position: "DT",
+    team_id: 24,
+    rating: 69
+  },
+   {
+    name: "Jeoffrey Pagan",
+    salary: 420000,
+    position: "DE",
+    team_id: 24,
+    rating: 64
+  },
+  {
+    name: "Alfred Blue",
+    salary: 730000,
+    position: "RB",
+    team_id: 24,
+    rating: 65
+  },
+  {
+    name: "Jay Prosch",
+    salary: 420000,
+    position: "FB",
+    team_id: 24,
+    rating: 70
+  },
+  {
+    name: "Andrew Hal",
+    salary: 420000,
+    position: "CB",
+    team_id: 24,
+    rating: 66
+  },
+  {
+    name: "Jay Cutler",
+    salary: 17500000,
+    position: "QB",
+    team_id: 25,
+    rating: 86
+  },
+  {
+    name: "Brandon Marshall",
+    salary: 7300000,
+    position: "WR",
+    team_id: 25,
+    rating: 96
+  },
+   {
+    name: "Matt Forte",
+    salary: 5950000,
+    position: "RB",
+    team_id: 25,
+    rating: 95
+  },
+  {
+    name: "Jermon Bushrod",
+    salary: 5000000,
+    position: "LT",
+    team_id: 25,
+    rating: 77
+  },
+  {
+    name: "Lance Briggs",
+    salary: 4750000,
+    position: "OLB",
+    team_id: 25,
+    rating: 87
+  },
+  {
+    name: "Martellus Bennett",
+    salary: 4800000,
+    position: "TE",
+    team_id: 25,
+    rating: 87
+  },
+  {
+    name: "Tim Jennings",
+    salary: 1355000,
+    position: "CB",
+    team_id: 25,
+    rating: 88
+  },
+  {
+    name: "Lamarr Houston",
+    salary: 1000000,
+    position: "DE",
+    team_id: 25,
+    rating: 89
+  },
+   {
+    name: "Jared Allen",
+    salary: 3000000,
+    position: "DE",
+    team_id: 25,
+    rating: 95
+  },
+  {
+    name: "Matt Slauson",
+    salary: 730000,
+    position: "G",
+    team_id: 25,
+    rating: 91
+  },
+  {
+    name: "Willie Young",
+    salary: 950000,
+    position: "DE",
+    team_id: 25,
+    rating: 80
+  },
+  {
+    name: "Robbie Gould",
+    salary: 1900000,
+    position: "K",
+    team_id: 25,
+    rating: 93
+  },
+  {
+    name: "Shea McClellin",
+    salary: 1141218,
+    position: "OLB",
+    team_id: 25,
+    rating: 67
+  },
+  {
+    name: "Kyle Long",
+    salary: 782316,
+    position: "G",
+    team_id: 25,
+    rating: 78
+  },
+   {
+    name: "Kyle Fuller",
+    salary: 420000,
+    position: "CB",
+    team_id: 25,
+    rating: 75
+  },
+  {
+    name: "Jay Ratliff",
+    salary: 855000,
+    position: "DT",
+    team_id: 25,
+    rating: 79
+  },
+  {
+    name: "Christopher Conte",
+    salary: 1421000,
+    position: "S",
+    team_id: 25,
+    rating: 74
+  },
+  {
+    name: "Roberto Garza",
+    salary: 4800000,
+    position: "C",
+    team_id: 25,
+    rating: 80
+  },
+  {
+    name: "Ryan Mundy",
+    salary: 800000,
+    position: "S",
+    team_id: 25,
+    rating: 79
+  },
+  {
+    name: "DJ Williams",
+    salary: 955000,
+    position: "ILB",
+    team_id: 25,
+    rating: 78
+  },
+   {
+    name: "Alshon Jeffery",
+    salary: 753438,
+    position: "DE",
+    team_id: 25,
+    rating: 91
+  },
+  {
+    name: "Stephen Paea",
+    salary: 730000,
+    position: "DT",
+    team_id: 25,
+    rating: 79
+  },
+  {
+    name: "Jon Bostic",
+    salary: 584127,
+    position: "OLB",
+    team_id: 25,
+    rating: 70
+  },
+  {
+    name: "Ego Ferguson",
+    salary: 420000,
+    position: "DT",
+    team_id: 25,
+    rating: 69
+  },
+  {
+    name: "Jimmy Clausen",
+    salary: 645000,
+    position: "QB",
+    team_id: 25,
+    rating: 67
+  },
+  {
+    name: "Sherrick McManis",
+    salary: 730000,
+    position: "CB",
+    team_id: 25,
+    rating: 66
+  },
+   {
+    name: "Danny McCray",
+    salary: 730000,
+    position: "S",
+    team_id: 25,
+    rating: 67
+  },
+  {
+    name: "Khaseem Greene",
+    salary: 495000,
+    position: "OLB",
+    team_id: 25,
+    rating: 69
+  },
+  {
+    name: "Donte Rosario",
+    salary: 855000,
+    position: "TE",
+    team_id: 25,
+    rating: 76
+  },
+  {
+    name: "Josh Morgan",
+    salary: 730000,
+    position: "WR",
+    team_id: 25,
+    rating: 76
+  },
+  {
+    name: "Will Sutton",
+    salary: 420000,
+    position: "DT",
+    team_id: 25,
+    rating: 69
+  },
+  {
+    name: "Eben Britton",
+    salary: 730000,
+    position: "RT",
+    team_id: 25,
+    rating: 70
+  },
+   {
+    name: "Jordan Mills",
+    salary: 3000000,
+    position: "RT",
+    team_id: 25,
+    rating: 74
+  },
+  {
+    name: "Ka'Deem Carey",
+    salary: 420000,
+    position: "RB",
+    team_id: 25,
+    rating: 71
+  },
+  {
+    name: "Cornelius Washington",
+    salary: 495000,
+    position: "DE",
+    team_id: 25,
+    rating: 69
+  },
+  {
+    name: "Brock Vereen",
+    salary: 420000,
+    position: "S",
+    team_id: 25,
+    rating: 66
+  },
+  {
+    name: "Pat O'Donnell",
+    salary: 420000,
+    position: "P",
+    team_id: 25,
+    rating: 54
+  },
+  {
+    name: "Charles Leno",
+    salary: 420000,
+    position: "G",
+    team_id: 25,
+    rating: 66
+  },
+   {
+    name: "Christian Jones",
+    salary: 420000,
+    position: "CB",
+    team_id: 25,
+    rating: 56
+  },
+  {
+    name: "Percy Harvin",
+    salary: 11000000,
+    position: "WR",
+    team_id: 26,
+    rating: 90
+  },
+  {
+    name: "Russell Okung",
+    salary: 8760000,
+    position: "LT",
+    team_id: 26,
+    rating: 86
+  },
+  {
+    name: "Cliff Avril",
+    salary: 7000000,
+    position: "DE",
+    team_id: 26,
+    rating: 87
+  },
+  {
+    name: "Marshawn Lynch",
+    salary: 6000000,
+    position: "RB",
+    team_id: 26,
+    rating: 95
+  },
+  {
+    name: "Earl Thomas",
+    salary: 4725000,
+    position: "S",
+    team_id: 26,
+    rating: 95
+  },
+   {
+    name: "Max Unger",
+    salary: 5000000,
+    position: "C",
+    team_id: 26,
+    rating: 86
+  },
+  {
+    name: "Kam Chancellor",
+    salary: 4725000,
+    position: "S",
+    team_id: 26,
+    rating: 93
+  },
+  {
+    name: "Brandon Mebane",
+    salary: 5500000,
+    position: "DT",
+    team_id: 26,
+    rating: 91
+  },
+  {
+    name: "Michael Bennett",
+    salary: 2000000,
+    position: "DE",
+    team_id: 26,
+    rating: 89
+  },
+  {
+    name: "Zach Miller",
+    salary: 900000,
+    position: "TE",
+    team_id: 26,
+    rating: 86
+  },
+  {
+    name: "Richard Sherman",
+    salary: 1431000,
+    position: "CB",
+    team_id: 26,
+    rating: 99
+  },
+   {
+    name: "Doug Baldwin",
+    salary: 1400000,
+    position: "WR",
+    team_id: 26,
+    rating: 83
+  },
+  {
+    name: "Bruce Irvin",
+    salary: 1239290,
+    position: "OLB",
+    team_id: 26,
+    rating: 83
+  },
+  {
+    name: "James Carpenter",
+    salary: 1417000,
+    position: "G",
+    team_id: 26,
+    rating: 78
+  },
+  {
+    name: "Troy McDaniel",
+    salary: 1000000,
+    position: "DT",
+    team_id: 26,
+    rating: 83
+  },
+  {
+    name: "Kevin Williams",
+    salary: 1500000,
+    position: "DT",
+    team_id: 26,
+    rating: 82
+  },
+  {
+    name: "Steven Hauschka",
+    salary: 4725000,
+    position: "K",
+    team_id: 26,
+    rating: 89
+  },
+   {
+    name: "KJ Wright",
+    salary: 1431000,
+    position: "OLB",
+    team_id: 26,
+    rating: 83
+  },
+  {
+    name: "Jon Ryan",
+    salary: 1400000,
+    position: "P",
+    team_id: 26,
+    rating: 79
+  },
+  {
+    name: "Jeron Johnson",
+    salary: 1000000,
+    position: "S",
+    team_id: 26,
+    rating: 74
+  },
+  {
+    name: "Tarvaris Jackson",
+    salary: 1100000,
+    position: "QB",
+    team_id: 26,
+    rating: 75
+  },
+  {
+    name: "Bobby Wagner",
+    salary: 781618,
+    position: "ILB",
+    team_id: 26,
+    rating: 88
+  },
+  {
+    name: "Clint Gresham",
+    salary: 750000,
+    position: "CB",
+    team_id: 26,
+    rating: 52
+  },
+   {
+    name: "Paul Richardson",
+    salary: 420000,
+    position: "WR",
+    team_id: 26,
+    rating: 68
+  },
+  {
+    name: "Russell Wilson",
+    salary: 662434,
+    position: "WR",
+    team_id: 26,
+    rating: 93
+  },
+  {
+    name: "Christine Michael",
+    salary: 558383,
+    position: "RB",
+    team_id: 26,
+    rating: 76
+  },
+  {
+    name: "Robert Turbin",
+    salary: 570000,
+    position: "RB",
+    team_id: 26,
+    rating: 78
+  },
+  {
+    name: "Byron Maxwell",
+    salary: 645000,
+    position: "CB",
+    team_id: 26,
+    rating: 84
+  },
+  {
+    name: "Malcolm Smith",
+    salary: 645000,
+    position: "OLB",
+    team_id: 26,
+    rating: 80
+  },
+   {
+    name: "Jordan Hill",
+    salary: 495000,
+    position: "DT",
+    team_id: 26,
+    rating: 66
+  },
+  {
+    name: "Michael Morgan",
+    salary: 645000,
+    position: "OLB",
+    team_id: 26,
+    rating: 66
+  },
+  {
+    name: "Steve Schilling",
+    salary: 645000,
+    position: "G",
+    team_id: 26,
+    rating: 70
+  },
+  {
+    name: "Justin Britt",
+    salary: 420000,
+    position: "RT",
+    team_id: 26,
+    rating: 72
+  },
+  {
+    name: "JR Sweezy",
+    salary: 570000,
+    position: "G",
+    team_id: 26,
+    rating: 78
+  },
+  {
+    name: "O'Brien Schofield",
+    salary: 730000,
+    position: "OLB",
+    team_id: 26,
+    rating: 75
+  },
+   {
+    name: "Jermaine Kearse",
+    salary: 570000,
+    position: "WR",
+    team_id: 26,
+    rating: 78
+  },
+  {
+    name: "Ricardo Lockette",
+    salary: 570000,
+    position: "WR",
+    team_id: 26,
+    rating: 65
+  },
+  {
+    name: "Deshawn Shead",
+    salary: 570000,
+    position: "S",
+    team_id: 26,
+    rating: 66
+  },
+  {
+    name: "Bryan Walters",
+    salary: 570000,
+    position: "WR",
+    team_id: 26,
+    rating: 62
+  },
+  {
+    name: "Tharold Simon",
+    salary: 495000,
+    position: "CB",
+    team_id: 26,
+    rating: 69
+  },
+  {
+    name: "Luke Wilson",
+    salary: 495000,
+    position: "TE",
+    team_id: 26,
+    rating: 72
+  },
+   {
+    name: "Cassius Marsh",
+    salary: 420000,
+    position: "DE",
+    team_id: 26,
+    rating: 67
+  },
+  {
+    name: "Kevin Norwood",
+    salary: 420000,
+    position: "WR",
+    team_id: 26,
+    rating: 68
+  },
+  {
+    name: "Kevin Pierre-Louis",
+    salary: 420000,
+    position: "WR",
+    team_id: 26,
+    rating: 65
+  },
+  {
+    name: "Alvin Bailey",
+    salary: 1100000,
+    position: "QB",
+    team_id: 26,
+    rating: 64
+  },
+  {
+    name: "Derrick Coleman",
+    salary: 495000,
+    position: "FB",
+    team_id: 26,
+    rating: 64
+  },
+  {
+    name: "Eli Manning",
+    salary: 15150000,
+    position: "QB",
+    team_id: 27,
+    rating: 81
+  },
+   {
+    name: "Antrel Rolle",
+    salary: 7000000,
+    position: "S",
+    team_id: 27,
+    rating: 86
+  },
+  {
+    name: "Victor Cruz",
+    salary: 3999000,
+    position: "WR",
+    team_id: 27,
+    rating: 87
+  },
+  {
+    name: "William Beatty",
+    salary: 4850000,
+    position: "LT",
+    team_id: 27,
+    rating: 75
+  },
+  {
+    name: "Mathias Kiwanuka",
+    salary: 1500000,
+    position: "DE",
+    team_id: 27,
+    rating: 72
+  },
+  {
+    name: "Jason Pierre-Paul",
+    salary: 3161000,
+    position: "DE",
+    team_id: 27,
+    rating: 87
+  },
+  {
+    name: "Cullen Jenkins",
+    salary: 2450000,
+    position: "DT",
+    team_id: 27,
+    rating: 82
+  },
+   {
+    name: "Jon Beason",
+    salary: 730000,
+    position: "ILB",
+    team_id: 27,
+    rating: 79
+  },
+  {
+    name: "Dominique Rodgers-Cromartie",
+    salary: 730000,
+    position: "ILB",
+    team_id: 27,
+    rating: 87
+  },
+  {
+    name: "Stevie Brown",
+    salary: 1725000,
+    position: "S",
+    team_id: 27,
+    rating: 82
+  },
+  {
+    name: "Prince Amukamara",
+    salary: 795200,
+    position: "DE",
+    team_id: 27,
+    rating: 84
+  },
+  {
+    name: "Steve Weatherford",
+    salary: 900000,
+    position: "P",
+    team_id: 27,
+    rating: 76
+  },
+  {
+    name: "JD Walton",
+    salary: 1250000,
+    position: "C",
+    team_id: 27,
+    rating: 76
+  },
+   {
+    name: "Justin Pugh",
+    salary: 784359,
+    position: "RT",
+    team_id: 27,
+    rating: 80
+  },
+  {
+    name: "Odell Beckham Jr.",
+    salary: 420000,
+    position: "WR",
+    team_id: 27,
+    rating: 75
+  },
+  {
+    name: "Jameel McClain",
+    salary: 1250000,
+    position: "ILB",
+    team_id: 27,
+    rating: 76
+  },
+  {
+    name: "Jacquian Williams",
+    salary: 1431000,
+    position: "OLB",
+    team_id: 27,
+    rating: 75
+  },
+  {
+    name: "Spencer Paysinger",
+    salary: 1431000,
+    position: "OLB",
+    team_id: 27,
+    rating: 77
+  },
+  {
+    name: "Josh Brown",
+    salary: 1000000,
+    position: "K",
+    team_id: 27,
+    rating: 83
+  },
+   {
+    name: "Rashad Jennings",
+    salary: 730000,
+    position: "RB",
+    team_id: 27,
+    rating: 82
+  },
+  {
+    name: "Trumaine McBride",
+    salary: 750000,
+    position: "CB",
+    team_id: 27,
+    rating: 75
+  },
+  {
+    name: "Robert Ayers",
+    salary: 730000,
+    position: "DE",
+    team_id: 27,
+    rating: 81
+  },
+  {
+    name: "Zak DeOssie",
+    salary: 795200,
+    position: "LS",
+    team_id: 27,
+    rating: 57
+  },
+  {
+    name: "Henry Hynoski",
+    salary: 725000,
+    position: "FB",
+    team_id: 27,
+    rating: 83
+  },
+  {
+    name: "Quintin Demps",
+    salary: 730000,
+    position: "S",
+    team_id: 27,
+    rating: 77
+  },
+   {
+    name: "Mark Herzlich",
+    salary: 775000,
+    position: "OLB",
+    team_id: 27,
+    rating: 71
+  },
+  {
+    name: "Johnathan Hankins",
+    salary: 588213,
+    position: "DT",
+    team_id: 27,
+    rating: 74
+  },
+  {
+    name: "Rueben Randle",
+    salary: 664266,
+    position: "WR",
+    team_id: 27,
+    rating: 77
+  },
+  {
+    name: "Weston Richburg",
+    salary: 420000,
+    position: "G",
+    team_id: 27,
+    rating: 74
+  },
+  {
+    name: "Peyton Hillis",
+    salary: 730000,
+    position: "RB",
+    team_id: 27,
+    rating: 73
+  },
+  {
+    name: "James Brewer",
+    salary: 650000,
+    position: "G",
+    team_id: 27,
+    rating: 75
+  },
+   {
+    name: "Adrien Robinson",
+    salary: 570000,
+    position: "TE",
+    team_id: 27,
+    rating: 72
+  },
+  {
+    name: "Damontre Moore",
+    salary: 495000,
+    position: "DE",
+    team_id: 27,
+    rating: 71
+  },
+  {
+    name: "Brandon Mosley",
+    salary: 570000,
+    position: "G",
+    team_id: 27,
+    rating: 69
+  },
+  {
+    name: "Mike Patterson",
+    salary: 855000,
+    position: "DT",
+    team_id: 27,
+    rating: 73
+  },
+  {
+    name: "Zackary Bowman",
+    salary: 730000,
+    position: "CB",
+    team_id: 27,
+    rating: 77
+  },
+  {
+    name: "Charles Brown",
+    salary: 730000,
+    position: "LT",
+    team_id: 27,
+    rating: 70
+  },
+   {
+    name: "John Jerry",
+    salary: 730000,
+    position: "G",
+    team_id: 27,
+    rating: 75
+  },
+  {
+    name: "Ryan Nassib",
+    salary: 495000,
+    position: "QB",
+    team_id: 27,
+    rating: 71
+  },
+  {
+    name: "Markus Kuhn",
+    salary: 570000,
+    position: "DT",
+    team_id: 27,
+    rating: 65
+  },
+  {
+    name: "Jay Bromley",
+    salary: 420000,
+    position: "DT",
+    team_id: 27,
+    rating: 70
+  },
+  {
+    name: "Jayron Hosley",
+    salary: 435882,
+    position: "CB",
+    team_id: 27,
+    rating: 73
+  },
+  {
+    name: "Daniel Fells",
+    salary: 730000,
+    position: "TE",
+    team_id: 27,
+    rating: 71
+  },
+   {
+    name: "Preston Parker",
+    salary: 570000,
+    position: "WR",
+    team_id: 27,
+    rating: 68
+  },
+  {
+    name: "Dallas Reynolds",
+    salary: 570000,
+    position: "G",
+    team_id: 27,
+    rating: 66
+  },
+  {
+    name: "Andre Williams",
+    salary: 420000,
+    position: "RB",
+    team_id: 27,
+    rating: 66
+  },
+  {
+    name: "Larry Donnell",
+    salary: 495000,
+    position: "TE",
+    team_id: 27,
+    rating: 78
+  },
+  {
+    name: "Nat Berhe",
+    salary: 420000,
+    position: "S",
+    team_id: 27,
+    rating: 68
+  },
+  {
+    name: "Devon Kennard",
+    salary: 420000,
+    position: "OLB",
+    team_id: 27,
+    rating: 66
+  },
+  {
+    name: "Michael Cox",
+    salary: 495000,
+    position: "RB",
+    team_id: 27,
+    rating: 64
+  },
+  {
+    name: "Drew Brees",
+    salary: 10750000,
+    position: "QB",
+    team_id: 28,
+    rating: 96
+  },
+  {
+    name: "Jahri Evans",
+    salary: 6800000,
+    position: "G",
+    team_id: 28,
+    rating: 91
+  },
+  {
+    name: "Ben Grubbs",
+    salary: 6000000,
+    position: "G",
+    team_id: 28,
+    rating: 91
+  },
+  {
+    name: "Marques Colston",
+    salary: 5500000,
+    position: "WR",
+    team_id: 28,
+    rating: 90
+  },
+  {
+    name: "Curtis Lofton",
+    salary: 1000000,
+    position: "ILB",
+    team_id: 28,
+    rating: 80
+  },
+  {
+    name: "Jimmy Graham",
+    salary: 1000000,
+    position: "TE",
+    team_id: 28,
+    rating: 97
+  },
+  {
+    name: "David Hawthorne",
+    salary: 1000000,
+    position: "OLB",
+    team_id: 28,
+    rating: 75
+  },
+  {
+    name: "Keenan Lewis",
+    salary: 1000000,
+    position: "CB",
+    team_id: 28,
+    rating: 87
+  },
+  {
+    name: "Brodrick Bunkley",
+    salary: 1300000,
+    position: "DT",
+    team_id: 28,
+    rating: 79
+  },
+  {
+    name: "Thomas Morstead",
+    salary: 2185000,
+    position: "P",
+    team_id: 28,
+    rating: 93
+  },
+  {
+    name: "Junior Galette",
+    salary: 750000,
+    position: "OLB",
+    team_id: 28,
+    rating: 85
+  },
+  {
+    name: "Patrick Robinson",
+    salary: 1282500,
+    position: "CB",
+    team_id: 28,
+    rating: 77
+  },
+  {
+    name: "Cameron Jordan",
+    salary: 1429282,
+    position: "DE",
+    team_id: 28,
+    rating: 93
+  },
+  {
+    name: "Mark Ingram",
+    salary: 1386375,
+    position: "RB",
+    team_id: 28,
+    rating: 77
+  },
+  {
+    name: "Kenny Vaccaro",
+    salary: 833396,
+    position: "S",
+    team_id: 28,
+    rating: 87
+  },
+  {
+    name: "Zach Strief",
+    salary: 900000,
+    position: "RT",
+    team_id: 28,
+    rating: 87
+  },
+  {
+    name: "Rafael Bush",
+    salary: 1850000,
+    position: "S",
+    team_id: 28,
+    rating: 78
+  },
+  {
+    name: "Benjamin Watson",
+    salary: 1000000,
+    position: "TE",
+    team_id: 28,
+    rating: 83
+  },
+  {
+    name: "Pierre Thomas",
+    salary: 855000,
+    position: "RB",
+    team_id: 28,
+    rating: 83
+  },
+  {
+    name: "Brandin Cooks",
+    salary: 420000,
+    position: "WR",
+    team_id: 28,
+    rating: 87
+  },
+  {
+    name: "Erik Lorig",
+    salary: 750000,
+    position: "FB",
+    team_id: 28,
+    rating: 79
+  },
+  {
+    name: "Justin Drescher",
+    salary: 730000,
+    position: "LS",
+    team_id: 28,
+    rating: 50
+  },
+  {
+    name: "Akiem Hicks",
+    salary: 570000,
+    position: "DE",
+    team_id: 28,
+    rating: 82
+  },
+  {
+    name: "Terron Armstead",
+    salary: 525000,
+    position: "LT",
+    team_id: 28,
+    rating: 75
+  },
+  {
+    name: "Nick Toon",
+    salary: 570000,
+    position: "WR",
+    team_id: 28,
+    rating: 69
+  },
+  {
+    name: "Stanley Jean-Baptiste",
+    salary: 420000,
+    position: "CB",
+    team_id: 28,
+    rating: 68
+  },
+  {
+    name: "John Jenkins",
+    salary: 515000,
+    position: "DT",
+    team_id: 28,
+    rating: 73
+  },
+  {
+    name: "Jonathan Goodwin",
+    salary: 955000,
+    position: "C",
+    team_id: 28,
+    rating: 79
+  },
+  {
+    name: "Parys Haralson",
+    salary: 855000,
+    position: "OLB",
+    team_id: 28,
+    rating: 82
+  },
+  {
+    name: "Luke McCown",
+    salary: 855000,
+    position: "QB",
+    team_id: 28,
+    rating: 75
+  },
+  {
+    name: "Ramon Humber",
+    salary: 730000,
+    position: "ILB",
+    team_id: 28,
+    rating: 66
+  },
+  {
+    name: "Corey White",
+    salary: 570000,
+    position: "CB",
+    team_id: 28,
+    rating: 75
+  },
+  {
+    name: "Travaris Cadet",
+    salary: 570000,
+    position: "RB",
+    team_id: 28,
+    rating: 70
+  },
+  {
+    name: "Tyrunn Walker",
+    salary: 570000,
+    position: "DE",
+    team_id: 28,
+    rating: 68
+  },
+  {
+    name: "Shayne Graham",
+    salary: 955000,
+    position: "K",
+    team_id: 28,
+    rating: 80
+  },
+  {
+    name: "Robert Meachem",
+    salary: 855000,
+    position: "WR",
+    team_id: 28,
+    rating: 76
+  },
+  {
+    name: "Brandon Deaderick",
+    salary: 730000,
+    position: "DT",
+    team_id: 28,
+    rating: 66
+  },
+  {
+    name: "Bryce Harris",
+    salary: 570000,
+    position: "LT",
+    team_id: 28,
+    rating: 67
+  },
+  {
+    name: "Kenny Stills",
+    salary: 495000,
+    position: "WR",
+    team_id: 28,
+    rating: 78
+  },
+  {
+    name: "Glenn Foster",
+    salary: 495000,
+    position: "DE",
+    team_id: 28,
+    rating: 72
+  },
+  {
+    name: "Josh Hill",
+    salary: 495000,
+    position: "TE",
+    team_id: 28,
+    rating: 66
+  },
+  {
+    name: "Tim Lelito",
+    salary: 495000,
+    position: "C",
+    team_id: 28,
+    rating: 70
+  },
+  {
+    name: "Khiry Robinson",
+    salary: 495000,
+    position: "RB",
+    team_id: 28,
+    rating: 73
+  },
+  {
+    name: "Senio Kelemete",
+    salary: 495000,
+    position: "G",
+    team_id: 28,
+    rating: 64
+  },
+  {
+    name: "Joseph Morgan",
+    salary: 495000,
+    position: "WR",
+    team_id: 28,
+    rating: 72
+  },
+  {
+    name: "Vinnie Sunseri",
+    salary: 420000,
+    position: "S",
+    team_id: 28,
+    rating: 69
+  },
+  {
+    name: "Ronald Powell",
+    salary: 420000,
+    position: "OLB",
+    team_id: 28,
+    rating: 62
+  },
+  {
+    name: "Marcus Ball",
+    salary: 420000,
+    position: "S",
+    team_id: 28,
+    rating: 71
+  },
+  {
+    name: "Kyle Knox",
+    salary: 420000,
+    position: "OLB",
+    team_id: 28,
+    rating: 61
+  },
+  {
+    name: "Philip Rivers",
+    salary: 13800000,
+    position: "QB",
+    team_id: 29,
+    rating: 92
+  },
+  {
+    name: "Eric Weddle",
+    salary: 7500000,
+    position: "S",
+    team_id: 29,
+    rating: 94
+  },
+  {
+    name: "Antonio Gates",
+    salary: 2000000,
+    position: "TE",
+    team_id: 29,
+    rating: 86
+  },
+  {
+    name: "Eddie Royal",
+    salary: 1750000,
+    position: "WR",
+    team_id: 29,
+    rating: 79
+  },
+  {
+    name: "Mike Scifres",
+    salary: 3250000,
+    position: "P",
+    team_id: 29,
+    rating: 84
+  },
+  {
+    name: "Malcom Floyd",
+    salary: 2750000,
+    position: "WR",
+    team_id: 29,
+    rating: 79
+  },
+  {
+    name: "Dwight Freeney",
+    salary: 1625000,
+    position: "OLB",
+    team_id: 29,
+    rating: 87
+  },
+  {
+    name: "Ryan Mathews",
+    salary: 1978250,
+    position: "RB",
+    team_id: 29,
+    rating: 84
+  },
+  {
+    name: "Jarret Johnson",
+    salary: 1000000,
+    position: "OLB",
+    team_id: 29,
+    rating: 81
+  },
+  {
+    name: "Brandon Flowers",
+    salary: 1500000,
+    position: "CB",
+    team_id: 29,
+    rating: 85
+  },
+  {
+    name: "Donald Butler",
+    salary: 750000,
+    position: "MLB",
+    team_id: 29,
+    rating: 83
+  },
+  {
+    name: "Corey Luget",
+    salary: 758964,
+    position: "DE",
+    team_id: 29,
+    rating: 83
+  },
+  {
+    name: "DJ Fluker",
+    salary: 923294,
+    position: "RT",
+    team_id: 29,
+    rating: 82
+  },
+  {
+    name: "King Dunlap",
+    salary: 1600000,
+    position: "LT",
+    team_id: 29,
+    rating: 82
+  },
+  {
+    name: "John Phillips",
+    salary: 1175000,
+    position: "TE",
+    team_id: 29,
+    rating: 75
+  },
+  {
+    name: "Donald Brown",
+    salary: 750000,
+    position: "RB",
+    team_id: 29,
+    rating: 80
+  },
+  {
+    name: "Chad Rinehart",
+    salary: 750000,
+    position: "G",
+    team_id: 29,
+    rating: 81
+  },
+  {
+    name: "Nick Novak",
+    salary: 1325000,
+    position: "K",
+    team_id: 29,
+    rating: 83
+  },
+  {
+    name: "Jason Verrett",
+    salary: 420000,
+    position: "CB",
+    team_id: 29,
+    rating: 77
+  },
+  {
+    name: "Marcus Gilchrist",
+    salary: 914400,
+    position: "S",
+    team_id: 29,
+    rating: 77
+  },
+  {
+    name: "Kellen Clemens",
+    salary: 855000,
+    position: "QB",
+    team_id: 29,
+    rating: 81
+  },
+  {
+    name: "Manti Te'o",
+    salary: 640110,
+    position: "ILB",
+    team_id: 29,
+    rating: 72
+  },
+  {
+    name: "Darrell Stuckey",
+    salary: 730000,
+    position: "S",
+    team_id: 29,
+    rating: 76
+  },
+  {
+    name: "Kendall Reyes",
+    salary: 765272,
+    position: "DE",
+    team_id: 29,
+    rating: 79
+  },
+  {
+    name: "Sean Lissemore",
+    salary: 1000000,
+    position: "DT",
+    team_id: 29,
+    rating: 77
+  },
+  {
+    name: "Reggie Walker",
+    salary: 730000,
+    position: "LB",
+    team_id: 29,
+    rating: 69
+  },
+  {
+    name: "Mike Windt",
+    salary: 730000,
+    position: "LS",
+    team_id: 29,
+    rating: 52
+  },
+  {
+    name: "David Johnson",
+    salary: 1750000,
+    position: "FB",
+    team_id: 29,
+    rating: 74
+  },
+  {
+    name: "Kavell Conner",
+    salary: 730000,
+    position: "ILB",
+    team_id: 29,
+    rating: 72
+  },
+  {
+    name: "Jeremiah Attaouchu",
+    salary: 420000,
+    position: "OLB",
+    team_id: 29,
+    rating: 69
+  },
+  {
+    name: "Ladarius Green",
+    salary: 570000,
+    position: "TE",
+    team_id: 29,
+    rating: 79
+  },
+  {
+    name: "Keenan Allen",
+    salary: 495000,
+    position: "WR",
+    team_id: 29,
+    rating: 87
+  },
+  {
+    name: "Andrew Gachkar",
+    salary: 645000,
+    position: "ILB",
+    team_id: 29,
+    rating: 70
+  },
+  {
+    name: "Willie Smith",
+    salary: 645000,
+    position: "LT",
+    team_id: 29,
+    rating: 68
+  },
+  {
+    name: "Seji Ajirotutu",
+    salary: 730000,
+    position: "WR",
+    team_id: 29,
+    rating: 68
+  },
+  {
+    name: "Rich Ohrnberger",
+    salary: 730000,
+    position: "C",
+    team_id: 29,
+    rating: 70
+  },
+  {
+    name: "Richard Marshall",
+    salary: 855000,
+    position: "CB",
+    team_id: 29,
+    rating: 73
+  },
+  {
+    name: "Chris Watt",
+    salary: 420000,
+    position: "G",
+    team_id: 29,
+    rating: 71
+  },
+  {
+    name: "Johnnie Troutman",
+    salary: 495000,
+    position: "G",
+    team_id: 29,
+    rating: 70
+  },
+  {
+    name: "Tourek Williams",
+    salary: 495000,
+    position: "OLB",
+    team_id: 29,
+    rating: 65
+  },
+  {
+    name: "Jahleel Addae",
+    salary: 495000,
+    position: "S",
+    team_id: 29,
+    rating: 73
+  },
+  {
+    name: "Steve Williams",
+    salary: 420000,
+    position: "CB",
+    team_id: 29,
+    rating: 74
+  },
+  {
+    name: "Ryan Carrethers",
+    salary: 420000,
+    position: "DT",
+    team_id: 29,
+    rating: 68
+  },
+  {
+    name: "Ndamukong Suh",
+    salary: 12550000,
+    position: "DT",
+    team_id: 30,
+    rating: 97
+  },
+  {
+    name: "Matthew Stafford",
+    salary: 2000000,
+    position: "QB",
+    team_id: 30,
+    rating: 87
+  },
+  {
+    name: "Calvin Johnson",
+    salary: 5000000,
+    position: "WR",
+    team_id: 30,
+    rating: 99
+  },
+  {
+    name: "Ezekiel Ansah",
+    salary: 1250205,
+    position: "DE",
+    team_id: 30,
+    rating: 82
+  },
+  {
+    name: "Rob Sims",
+    salary: 2200000,
+    position: "G",
+    team_id: 30,
+    rating: 83
+  },
+  {
+    name: "Jason Jones",
+    salary: 2850000,
+    position: "DE",
+    team_id: 30,
+    rating: 80
+  },
+  {
+    name: "DeAndre Levy",
+    salary: 2250000,
+    position: "LB",
+    team_id: 30,
+    rating: 83
+  },
+  {
+    name: "Nick Fairley",
+    salary: 1723500,
+    position: "DT",
+    team_id: 30,
+    rating: 91
+  },
+  {
+    name: "Golden Tate",
+    salary: 1500000,
+    position: "WR",
+    team_id: 30,
+    rating: 84
+  },
+  {
+    name: "Reggie Bush",
+    salary: 1166667,
+    position: "RB",
+    team_id: 30,
+    rating: 85
+  },
+  {
+    name: "Glover Quin",
+    salary: 730000,
+    position: "S",
+    team_id: 30,
+    rating: 84
+  },
+  {
+    name: "Joique Bell",
+    salary: 1300000,
+    position: "RB",
+    team_id: 30,
+    rating: 84
+  },
+  {
+    name: "Eric Ebron",
+    salary: 420000,
+    position: "TE",
+    team_id: 30,
+    rating: 77
+  },
+  {
+    name: "Brandon Pettigrew",
+    salary: 1200000,
+    position: "TE",
+    team_id: 30,
+    rating: 79
+  },
+  {
+    name: "Riley Reiff",
+    salary: 1116700,
+    position: "LT",
+    team_id: 30,
+    rating: 80
+  },
+  {
+    name: "CJ Mosley",
+    salary: 1550000,
+    position: "DT",
+    team_id: 30,
+    rating: 76
+  },
+  {
+    name: "Ashlee Palmer",
+    salary: 1250000,
+    position: "OLB",
+    team_id: 30,
+    rating: 77
+  },
+  {
+    name: "Dominic Raiola",
+    salary: 1250000,
+    position: "C",
+    team_id: 30,
+    rating: 91
+  },
+  {
+    name: "Darius Slay",
+    salary: 495423,
+    position: "CB",
+    team_id: 30,
+    rating: 72
+  },
+  {
+    name: "James Ihedigbo",
+    salary: 1723500,
+    position: "S",
+    team_id: 30,
+    rating: 81
+  },
+  {
+    name: "Ryan Broyles",
+    salary: 570000,
+    position: "WR",
+    team_id: 30,
+    rating: 72
+  },
+  {
+    name: "Don Carey",
+    salary: 730000,
+    position: "S",
+    team_id: 30,
+    rating: 73
+  },
+  {
+    name: "Larry Warford",
+    salary: 515000,
+    position: "G",
+    team_id: 30,
+    rating: 88
+  },
+  {
+    name: "Jed Collins",
+    salary: 1300000,
+    position: "FB",
+    team_id: 30,
+    rating: 85
+  },
+  {
+    name: "Isa Abdul-Quddus",
+    salary: 645000,
+    position: "S",
+    team_id: 30,
+    rating: 72
+  },
+  {
+    name: "Rashean Mathis",
+    salary: 955000,
+    position: "CB",
+    team_id: 30,
+    rating: 80
+  },
+  {
+    name: "Don Muhlbach",
+    salary: 955000,
+    position: "CB",
+    team_id: 30,
+    rating: 58
+  },
+  {
+    name: "Dan Orlovsky",
+    salary: 855000,
+    position: "QB",
+    team_id: 30,
+    rating: 71
+  },
+  {
+    name: "Tahir Whitehead",
+    salary: 570000,
+    position: "ILB",
+    team_id: 30,
+    rating: 66
+  },
+  {
+    name: "Travis Lewis",
+    salary: 570000,
+    position: "ILB",
+    team_id: 30,
+    rating: 62
+  },
+  {
+    name: "Kellen Moore",
+    salary: 570000,
+    position: "QB",
+    team_id: 30,
+    rating: 67
+  },
+  {
+    name: "Travis Swanson",
+    salary: 420000,
+    position: "C",
+    team_id: 30,
+    rating: 69
+  },
+  {
+    name: "Devin Taylor",
+    salary: 495000,
+    position: "DE",
+    team_id: 30,
+    rating: 75
+  },
+  {
+    name: "Darryl Tapp",
+    salary: 855000,
+    position: "OLB",
+    team_id: 30,
+    rating: 85
+  },
+  {
+    name: "George Johnson",
+    salary: 730000,
+    position: "DE",
+    team_id: 30,
+    rating: 66
+  },
+  {
+    name: "Cassius Vaughn",
+    salary: 730000,
+    position: "CB",
+    team_id: 30,
+    rating: 73
+  },
+  {
+    name: "Jeremy Ross",
+    salary: 570000,
+    position: "WR",
+    team_id: 30,
+    rating: 67
+  },
+  {
+    name: "Sam Martin",
+    salary: 495000,
+    position: "P",
+    team_id: 30,
+    rating: 81
+  },
+  {
+    name: "Theo Riddick",
+    salary: 495000,
+    position: "RB",
+    team_id: 30,
+    rating: 71
+  },
+  {
+    name: "Julian Stanford",
+    salary: 570000,
+    position: "MLB",
+    team_id: 30,
+    rating: 67
+  },
+  {
+    name: "Joseph Fauria",
+    salary: 495000,
+    position: "TE",
+    team_id: 30,
+    rating: 77
+  },
+  {
+    name: "LaAdrian Waddle",
+    salary: 495000,
+    position: "RT",
+    team_id: 30,
+    rating: 76
+  },
+  {
+    name: "Larry Webster",
+    salary: 420000,
+    position: "TE",
+    team_id: 30,
+    rating: 64
+  },
+  {
+    name: "Caraun Reid",
+    salary: 420000,
+    position: "DT",
+    team_id: 30,
+    rating: 65
+  },
+  {
+    name: "Corey Fuller",
+    salary: 420000,
+    position: "WR",
+    team_id: 30,
+    rating: 63
+  },
+  {
+    name: "Matt Prater",
+    salary: 603529,
+    position: "K",
+    team_id: 30,
+    rating: 75
+  },
+  {
+    name: "James Laurinaitis",
+    salary: 10000000,
+    position: "ILB",
+    team_id: 31,
+    rating: 81
+  },
+  {
+    name: "Jake Long",
+    salary: 8000000,
+    position: "LT",
+    team_id: 31,
+    rating: 90
+  },
+  {
+    name: "Chris Long",
+    salary: 10200000,
+    position: "DE",
+    team_id: 31,
+    rating: 87
+  },
+  {
+    name: "Jared Cook",
+    salary: 3000000,
+    position: "TE",
+    team_id: 31,
+    rating: 81
+  },
+  {
+    name: "Kendall Langford",
+    salary: 5000000,
+    position: "DT",
+    team_id: 31,
+    rating: 80
+  },
+  {
+    name: "Scott Wells",
+    salary: 1000000,
+    position: "C",
+    team_id: 31,
+    rating: 79
+  },
+  {
+    name: "Rodger Saffold",
+    salary: 3000000,
+    position: "G",
+    team_id: 31,
+    rating: 87
+  },
+  {
+    name: "Greg Robinson",
+    salary: 420000,
+    position: "G",
+    team_id: 31,
+    rating: 83
+  },
+  {
+    name: "William Hayes",
+    salary: 2595000,
+    position: "DE",
+    team_id: 31,
+    rating: 84
+  },
+  {
+    name: "Robert Quinn",
+    salary: 646646,
+    position: "DE",
+    team_id: 31,
+    rating: 97
+  },
+  {
+    name: "Tavon Austin",
+    salary: 984591,
+    position: "WR",
+    team_id: 31,
+    rating: 78
+  },
+  {
+    name: "Michael Brockers",
+    salary: 1255636,
+    position: "DT",
+    team_id: 31,
+    rating: 81
+  },
+  {
+    name: "Aaron Donald",
+    salary: 420000,
+    position: "DT",
+    team_id: 31,
+    rating: 79
+  },
+  {
+    name: "Shaun Hill",
+    salary: 1250000,
+    position: "QB",
+    team_id: 31,
+    rating: 76
+  },
+  {
+    name: "Davin Joseph",
+    salary: 1100000,
+    position: "G",
+    team_id: 31,
+    rating: 74
+  },
+  {
+    name: "Alec Ogletree",
+    salary: 724547,
+    position: "OLB",
+    team_id: 31,
+    rating: 79
+  },
+  {
+    name: "Alex Carrington",
+    salary: 1000000,
+    position: "DE",
+    team_id: 31,
+    rating: 76
+  },
+  {
+    name: "Brian Quick",
+    salary: 879690,
+    position: "WR",
+    team_id: 31,
+    rating: 72
+  },
+  {
+    name: "Kenny Britt",
+    salary: 1000000,
+    position: "WR",
+    team_id: 31,
+    rating: 77
+  },
+  {
+    name: "Janoris Jenkins",
+    salary: 570000,
+    position: "CB",
+    team_id: 31,
+    rating: 84
+  },
+  {
+    name: "Lance Kendricks",
+    salary: 951177,
+    position: "TE",
+    team_id: 31,
+    rating: 77
+  },
+  {
+    name: "Eugene Sims",
+    salary: 950000,
+    position: "DE",
+    team_id: 31,
+    rating: 73
+  },
+  {
+    name: "Austin Pettis",
+    salary: 700000,
+    position: "WR",
+    team_id: 31,
+    rating: 76
+  },
+  {
+    name: "LeMarcus Joyner",
+    salary: 420000,
+    position: "DT",
+    team_id: 31,
+    rating: 73
+  },
+  {
+    name: "JoLonn Dunbar",
+    salary: 751157,
+    position: "OLB",
+    team_id: 31,
+    rating: 77
+  },
+  {
+    name: "Trumaine Johnson",
+    salary: 656000,
+    position: "CB",
+    team_id: 31,
+    rating: 77
+  },
+  {
+    name: "Jake McQuaide",
+    salary: 645000,
+    position: "LS",
+    team_id: 31,
+    rating: 49
+  },
+  {
+    name: "Chris Givens",
+    salary: 570000,
+    position: "WR",
+    team_id: 31,
+    rating: 75
+  },
+  {
+    name: "TJ McDonald",
+    salary: 518815,
+    position: "DT",
+    team_id: 31,
+    rating: 75
+  },
+  {
+    name: "Joe Barksdale",
+    salary: 645000,
+    position: "RT",
+    team_id: 31,
+    rating: 79
+  },
+  {
+    name: "Michael Person",
+    salary: 645000,
+    position: "LT",
+    team_id: 31,
+    rating: 63
+  },
+  {
+    name: "Greg Zuerlein",
+    salary: 570000,
+    position: "K",
+    team_id: 31,
+    rating: 87
+  },
+  {
+    name: "Barrett Jones",
+    salary: 495000,
+    position: "C",
+    team_id: 31,
+    rating: 70
+  },
+  {
+    name: "Stedman Bailey",
+    salary: 452058,
+    position: "WR",
+    team_id: 31,
+    rating: 73
+  },
+  {
+    name: "Tre Mason",
+    salary: 420000,
+    position: "RB",
+    team_id: 31,
+    rating: 74
+  },
+  {
+    name: "Johnny Hekker",
+    salary: 570000,
+    position: "P",
+    team_id: 31,
+    rating: 87
+  },
+  {
+    name: "Rodney McLeod",
+    salary: 570000,
+    position: "S",
+    team_id: 31,
+    rating: 74
+  },
+  {
+    name: "Tim Barnes",
+    salary: 570000,
+    position: "C",
+    team_id: 31,
+    rating: 69
+  },
+  {
+    name: "Austin Davis",
+    salary: 570000,
+    position: "QB",
+    team_id: 31,
+    rating: 75
+  },
+  {
+    name: "Cory Harkey",
+    salary: 570000,
+    position: "FB",
+    team_id: 31,
+    rating: 72
+  },
+  {
+    name: "Brandon McGee",
+    salary: 495000,
+    position: "CB",
+    team_id: 31,
+    rating: 70
+  },
+  {
+    name: "Zac Stacy",
+    salary: 495000,
+    position: "RB",
+    team_id: 31,
+    rating: 84
+  },
+  {
+    name: "Maurice Alexander",
+    salary: 420000,
+    position: "S",
+    team_id: 31,
+    rating: 65
+  },
+  {
+    name: "Benny Cunningham",
+    salary: 495000,
+    position: "RB",
+    team_id: 31,
+    rating: 70
+  },
+  {
+    name: "Daren Bates",
+    salary: 495000,
+    position: "ILB",
+    team_id: 31,
+    rating: 62
+  },
+  {
+    name: "Cody Davis",
+    salary: 495000,
+    position: "S",
+    team_id: 31,
+    rating: 64
+  },
+  {
+    name: "Chase Reynolds",
+    salary: 495000,
+    position: "RB",
+    team_id: 31,
+    rating: 65
+  },
+  {
+    name: "Ethan Westbrooks",
+    salary: 420000,
+    position: "DE",
+    team_id: 31,
+    rating: 65
+  },
+  {
+    name: "Sam Bradford",
+    salary: 14015000,
+    position: "QB",
+    team_id: 31,
+    rating: 85
+  },
+  {
+    name: "Brian Orakpo",
+    salary: 11455000,
+    position: "OLB",
+    team_id: 32,
+    rating: 92
+  },
+  {
+    name: "Trent Williams",
+    salary: 7250000,
+    position: "LT",
+    team_id: 32,
+    rating: 95
+  },
+  {
+    name: "Pierre Garcon",
+    salary: 7100000,
+    position: "WR",
+    team_id: 32,
+    rating: 89
+  },
+  {
+    name: "Robert Griffin III",
+    salary: 2309918,
+    position: "QB",
+    team_id: 32,
+    rating: 82
+  },
+  {
+    name: "Chris Chester",
+    salary: 3000000,
+    position: "G",
+    team_id: 32,
+    rating: 81
+  },
+  {
+    name: "DeSean Jackson",
+    salary: 1000000,
+    position: "WR",
+    team_id: 32,
+    rating: 90
+  },
+  {
+    name: "Jason Hatcher",
+    salary: 1500000,
+    position: "DE",
+    team_id: 32,
+    rating: 89
+  },
+  {
+    name: "Kory Lichtensteiger",
+    salary: 2500000,
+    position: "C",
+    team_id: 32,
+    rating: 77
+  },
+  {
+    name: "Shawn Lauvao",
+    salary: 2000000,
+    position: "LG",
+    team_id: 32,
+    rating: 76
+  },
+  {
+    name: "Perry Riley",
+    salary: 2000000,
+    position: "ILB",
+    team_id: 32,
+    rating: 76
+  },
+  {
+    name: "Tracy Porter",
+    salary: 1250000,
+    position: "CB",
+    team_id: 32,
+    rating: 77
+  },
+  {
+    name: "Ryan Kerrigan",
+    salary: 1564131,
+    position: "OLB",
+    team_id: 32,
+    rating: 86
+  },
+  {
+    name: "Tyler Polumbus",
+    salary: 1500000,
+    position: "RT",
+    team_id: 32,
+    rating: 78
+  },
+  {
+    name: "Andre Roberts",
+    salary: 1250000,
+    position: "WR",
+    team_id: 32,
+    rating: 80
+  },
+  {
+    name: "Logan Paulsen",
+    salary: 870000,
+    position: "TE",
+    team_id: 32,
+    rating: 72
+  },
+  {
+    name: "Chris Baker",
+    salary: 950000,
+    position: "DT",
+    team_id: 32,
+    rating: 74
+  },
+  {
+    name: "Roy Helu",
+    salary: 1431000,
+    position: "RB",
+    team_id: 32,
+    rating: 78
+  },
+  {
+    name: "Jarvis Jenkins",
+    salary: 927184,
+    position: "DE",
+    team_id: 32,
+    rating: 75
+  },
+  {
+    name: "Darrel Young",
+    salary: 875000,
+    position: "FB",
+    team_id: 32,
+    rating: 87
+  },
+  {
+    name: "Clifton Geathers",
+    salary: 1075000,
+    position: "DE",
+    team_id: 32,
+    rating: 68
+  },
+  {
+    name: "Kedric Golston",
+    salary: 900000,
+    position: "DE",
+    team_id: 32,
+    rating: 74
+  },
+  {
+    name: "Adam Hayward",
+    salary: 855000,
+    position: "OLB",
+    team_id: 32,
+    rating: 72
+  },
+  {
+    name: "Nick Sundberg",
+    salary: 750000,
+    position: "LS",
+    team_id: 32,
+    rating: 57
+  },
+  {
+    name: "Brandon Meriweather",
+    salary: 754411,
+    position: "S",
+    team_id: 32,
+    rating: 79
+  },
+  {
+    name: "David Amerson",
+    salary: 530041,
+    position: "CB",
+    team_id: 32,
+    rating: 74
+  },
+  {
+    name: "Trent Murphy",
+    salary: 420000,
+    position: "OLB",
+    team_id: 32,
+    rating: 70
+  },
+  {
+    name: "Josh LiRibeus",
+    salary: 590000,
+    position: "G",
+    team_id: 32,
+    rating: 70
+  },
+  {
+    name: "Niles Paul",
+    salary: 645000,
+    position: "TE",
+    team_id: 32,
+    rating: 70
+  },
+  {
+    name: "Kirk Cousins",
+    salary: 570000,
+    position: "QB",
+    team_id: 32,
+    rating: 77
+  },
+  {
+    name: "Keenan Robinson",
+    salary: 570000,
+    position: "ILB",
+    team_id: 32,
+    rating: 60
+  },
+  {
+    name: "Jordan Reed",
+    salary: 495000,
+    position: "TE",
+    team_id: 32,
+    rating: 81
+  },
+  {
+    name: "Ryan Clark",
+    salary: 955000,
+    position: "S",
+    team_id: 32,
+    rating: 82
+  },
+  {
+    name: "Santana Moss",
+    salary: 955000,
+    position: "WR",
+    team_id: 32,
+    rating: 76
+  },
+  {
+    name: "Akeem Jordan",
+    salary: 855000,
+    position: "ILB",
+    team_id: 32,
+    rating: 77
+  },
+  {
+    name: "EJ Biggers",
+    salary: 730000,
+    position: "CB",
+    team_id: 32,
+    rating: 72
+  },
+  {
+    name: "Colt McCoy",
+    salary: 730000,
+    position: "QB",
+    team_id: 32,
+    rating: 73
+  },
+  {
+    name: "Morgan Moses",
+    salary: 420000,
+    position: "LT",
+    team_id: 32,
+    rating: 74
+  },
+  {
+    name: "Spencer Long",
+    salary: 420000,
+    position: "G",
+    team_id: 32,
+    rating: 71
+  },
+  {
+    name: "Tom Compton",
+    salary: 870000,
+    position: "LT",
+    team_id: 32,
+    rating: 71
+  },
+  {
+    name: "Kai Forbath",
+    salary: 570000,
+    position: "K",
+    team_id: 32,
+    rating: 69
+  },
+  {
+    name: "Frank Kearse",
+    salary: 570000,
+    position: "DT",
+    team_id: 32,
+    rating: 73
+  },
+  {
+    name: "Trenton Robinson",
+    salary: 570000,
+    position: "S",
+    team_id: 32,
+    rating: 70
+  },
+  {
+    name: "Aldrick Robinson",
+    salary: 570000,
+    position: "FB",
+    team_id: 32,
+    rating: 74
+  },
+  {
+    name: "Bashaud Breeland",
+    salary: 420000,
+    position: "CB",
+    team_id: 32,
+    rating: 69
+  },
+  {
+    name: "Ryan Grant",
+    salary: 420000,
+    position: "WR",
+    team_id: 32,
+    rating: 64
+  },
+  {
+    name: "Chase Minnifield",
+    salary: 495000,
+    position: "CB",
+    team_id: 32,
+    rating: 64
+  },
+  {
+    name: "Silas Redd",
+    salary: 420000,
+    position: "RB",
+    team_id: 32,
+    rating: 69
   }
   ])
