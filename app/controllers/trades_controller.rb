@@ -27,12 +27,12 @@ include ActionView::Helpers::NumberHelper
     @trade = Trade.find(params[:id])
     @trade.trade_teams.each do |trade_team|
       trade_team.traded_players.each do |traded_player|
-        if team_salary[TradeTeam.find(traded_player.trade_team_id).team_id]
-          team_salary[TradeTeam.find(traded_player.trade_team_id).team_id] <<
-          Player.find(traded_player.player_id).salary
+        if team_salary[traded_player.player.team.id]
+          team_salary[traded_player.player.team.id] <<
+          traded_player.player.salary
         else
-          team_salary[TradeTeam.find(traded_player.trade_team_id).team_id] =
-          [Player.find(traded_player.player_id).salary]
+          team_salary[traded_player.player.team.id] =
+          [traded_player.player.salary]
         end
       end
     end
@@ -44,12 +44,12 @@ include ActionView::Helpers::NumberHelper
     team_ratings = {}
     @trade.trade_teams.each do |trade_team|
       trade_team.traded_players.each do |traded_player|
-        if team_ratings[TradeTeam.find(traded_player.trade_team_id).team_id]
-          team_ratings[TradeTeam.find(traded_player.trade_team_id).team_id] <<
-          Player.find(traded_player.player_id).rating
+        if team_ratings[traded_player.player.team.id]
+          team_ratings[traded_player.player.team.id] <<
+          traded_player.player.rating
         else
-          team_ratings[TradeTeam.find(traded_player.trade_team_id).team_id] =
-          [Player.find(traded_player.player_id).rating]
+          team_ratings[traded_player.player.team.id] =
+          [traded_player.player.rating]
         end
       end
     end
