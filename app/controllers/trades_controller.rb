@@ -100,4 +100,10 @@ include ActionView::Helpers::NumberHelper
     redirect_to trades_path
   end
 
+  def destroy
+    @trade = Trade.find(params[:id])
+    @trade.destroy
+    redirect_to root_path
+  end
+
 end
