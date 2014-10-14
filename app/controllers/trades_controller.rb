@@ -4,7 +4,7 @@ include ActionView::Helpers::NumberHelper
 
   def index
     @trade = Trade.new
-    @trades = Trade.where(user_id: current_user.id)
+    @trades = current_user.trades
   end
 
   def show
@@ -99,4 +99,5 @@ include ActionView::Helpers::NumberHelper
       end
     redirect_to trades_path
   end
+
 end
