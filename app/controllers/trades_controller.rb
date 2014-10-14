@@ -70,12 +70,15 @@ include ActionView::Helpers::NumberHelper
     team_2_new_cap_curr = number_to_currency(team_2_new_cap, precision: 0)
     ratings_diff = average_ratings.to_a
     avg_diff = ratings_diff[0][1] - ratings_diff[1][1]
-    if avg_diff >= 0
+    if avg_diff > 0
       team_1_change = ((avg_diff / 10) * -1).round(1)
       team_2_change = "+#{(avg_diff / 10).round(1)}"
-    else
+    elsif avg_diff < 0
       team_1_change = "+#{((avg_diff / 10) * -1).round(1)}"
       team_2_change = (avg_diff / 10).round(1)
+    else
+      team_1_change = "+0"
+      team_2_change = "+0"
     end
       if Team.find(team_diff[0][0]).salary_cap > team_1_new_cap &&
         Team.find(team_diff[1][0]).salary_cap > team_2_new_cap
