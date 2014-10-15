@@ -20,7 +20,7 @@
 <%= form_for @trade do |f| %>
   <% if @trade.errors.any? %>
     <div id="error_explanation">
-      <h4><%= pluralize(@trade.errors.count, "error") %> prohibited this article from being saved:</h4>
+      <h4>Error:</h4>
       <ul>
         <% @trade.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -39,13 +39,13 @@
     <% @trades.each do |trade| %>
       <% if trade.status %>
         <hr>
-        <h3 id="black"><strong>Trade Result: <%= trade.status %></strong></h3>
-        <h4 id="blue"><strong><%= trade.team_1_new_cap_hit %> | <%= trade.team_2_new_cap_hit %></strong>
+        <h3><strong>Trade Result: <%= trade.status %></strong></h3>
+        <h4 class="blue"><strong><%= trade.team_1_new_cap_hit %> | <%= trade.team_2_new_cap_hit %></strong>
         <% if trade.team_1_change %>
-         <h4 id="blue"><strong><%= trade.team_1_change %> | <%= trade.team_2_change %></strong></h4>
+         <h4 class="blue"><strong><%= trade.team_1_change %> | <%= trade.team_2_change %></strong></h4>
       <% end %>
       <% if trade.cap_needed %>
-         <h4 id="red"><strong>For trade to pass, cut <%= trade.cap_needed_team %> post-trade salary by <%= number_to_currency(trade.cap_needed, precision: 0) %></strong></h4>
+         <h4 class="red"><strong>For trade to pass, cut <%= trade.cap_needed_team %> post-trade salary by <%= number_to_currency(trade.cap_needed, precision: 0) %></strong></h4>
         <% end %>
         <% trade.trade_teams.each do |trade_team| %>
          <h4><img src="<%= trade_team.team.logo %>"/> <%= trade_team.team.name %> (Salary Cap: <%= number_to_currency(trade_team.team.salary_cap, precision: 0) %>) trades:</h4>
@@ -54,7 +54,7 @@
           <% end %>
         <% end %>
       <% end %>
-      <h5 id="red"><strong><%= link_to "Clear", trade_path(trade), data: {method: 'delete'} %></strong></h5>
+      <h5 class="red"><strong><%= link_to "Clear", trade_path(trade), data: {method: 'delete'} %></strong></h5>
     <% end %>
   <% end %>
 <% end %>

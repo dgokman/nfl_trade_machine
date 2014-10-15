@@ -65,15 +65,12 @@ p, h1, h2, h3, h4, h5, li {
   color: black;
 }
 
-h3#black {
-  color: black;
-}
 
-h4#blue {
+h4.blue {
   color: #000099;
 }
 
-h4#red, h5#red, h5#red a {
+li.red, h4.red, h5.red, h5.red a {
   color: #B00000;
 }
 

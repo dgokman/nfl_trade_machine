@@ -1,10 +1,10 @@
 <%= form_for [@trade_team, @traded_player] do |f| %>
   <% if @traded_player.errors.any? %>
     <div id="error_explanation">
-      <h4><%= pluralize(@traded_player.errors.count, "error") %> prohibited this article from being saved:</h4>
+      <h4 class="red">Error:</h4>
       <ul>
         <% @traded_player.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+          <li class="red"><%= msg %></li>
         <% end %>
       </ul>
     </div>
