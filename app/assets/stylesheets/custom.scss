@@ -1,16 +1,16 @@
 a {
-  color: white;
+  color: black;
   font-size: 21px;
 }
 
 a:hover {
-  color: white;
+  color: black;
   font-size: 21px;
   text-decoration: underline;
 }
 
 a:active, a:visited {
-  color: white;
+  color: black;
   font-size: 21px;
 }
 
@@ -53,16 +53,16 @@ li.name h1 a {
 
 label {
   font-size: 18px;
-  color: white;
+  color: black;
 }
 
 
 body {
-  background-image: url('/background.jpg');
+  background-image: url('/background-lighter.jpg');
 }
 
 p, h1, h2, h3, h4, h5, li {
-  color: white;
+  color: black;
 }
 
 h3#black {
