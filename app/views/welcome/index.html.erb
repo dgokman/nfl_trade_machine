@@ -33,7 +33,7 @@
     <%= f.submit "Start Trade", class: 'trade' %>
   </p>
 <% end %>
-  <% unless @trades == [] %>
+  <% if trades_available?(@trades) %>
    <h3>Your trades</h3>
 
     <% @trades.each do |trade| %>
