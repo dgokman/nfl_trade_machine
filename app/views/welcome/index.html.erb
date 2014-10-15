@@ -54,7 +54,9 @@
           <% end %>
         <% end %>
       <% end %>
-      <h5 class="red"><strong><%= link_to "Clear", trade_path(trade), data: {method: 'delete'} %></strong></h5>
+      <% if trade.status %>
+        <h5 class="red"><strong><%= link_to "Clear", trade_path(trade), data: {method: 'delete'} %></strong></h5>
+      <% end %>
     <% end %>
   <% end %>
 <% end %>
