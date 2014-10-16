@@ -33,14 +33,20 @@
     </ul>
 
   </nav>
-  <% if flash.any? %>
+  <% if flash.any? && alert.nil? %>
     <div class="flash">
       <div class="container">
         <%= flash[:notice] %>
       </div>
     </div>
   <% end %>
-  <p class="alert"><%= alert %></p>
+  <% if alert %>
+    <div class="alert">
+      <div class="container">
+        <%= alert %>
+      </div>
+    </div>
+  <% end %>
    <div class="text">
     <%= yield %>
    </div>

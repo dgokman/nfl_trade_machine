@@ -1,13 +1,11 @@
 <%= form_for [@trade_team, @traded_player] do |f| %>
   <% if @traded_player.errors.any? %>
     <div id="error_explanation">
-      <h4 class="red">Error:</h4>
-      <ul>
         <% @traded_player.errors.full_messages.each do |msg| %>
-          <li class="red"><%= msg %></li>
+          <div class="red">Error: <%= msg %></div>
         <% end %>
-      </ul>
     </div>
+    <br>
   <% end %>
   <p>Note: Listed salary is only the player's Base Salary, which is transferred over to the new team during a trade. It does not include Signing Bonus, Roster Bonus, etc. which will still be owed to the player by the original team.</p>
   <p>

@@ -104,6 +104,7 @@ include ActionView::Helpers::NumberHelper
     @trade = Trade.find(params[:id])
     @trade.destroy
     redirect_to root_path
+    flash[:notice] = "Trade has been deleted"
   end
 
 end

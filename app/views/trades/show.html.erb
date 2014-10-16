@@ -2,12 +2,9 @@
   <%= form_for [@trade, @trade_team] do |f| %>
     <% if @trade_team.errors.any? %>
       <div id="error_explanation">
-        <h4 class="red">Error:</h4>
-        <ul>
           <% @trade_team.errors.full_messages.each do |msg| %>
-            <li class="red"><%= msg %></li>
+            <div class="red">Error: <%= msg %></div>
           <% end %>
-        </ul>
       </div>
     <% end %>
 

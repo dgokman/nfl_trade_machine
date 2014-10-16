@@ -69,11 +69,11 @@ h4.blue {
   color: #000099;
 }
 
-li.red, h4.red, h5.red, h5.red a {
+.red, li.red, h4.red, h5.red, h5.red a {
   color: #B00000;
 }
 
-.flash {
+.flash, .alert {
   padding: 0.75em;
   background-color: #99FF66;
 }
