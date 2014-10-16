@@ -5,5 +5,6 @@ FactoryGirl.define do
     salary "10"
     position "WR"
     association :team
+    sequence(:name_salary) { |n| "Victor#{n} Cruz - 100" }
   end
 end
