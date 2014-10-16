@@ -7,4 +7,8 @@ module ApplicationHelper
     end
   false
   end
+
+  def twitter_user?(user)
+    user.email =~ /@twitter/
+  end
 end
