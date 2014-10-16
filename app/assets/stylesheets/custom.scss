@@ -65,13 +65,17 @@ p, h1, h2, h3, h4, h5, li {
   color: black;
 }
 
-
 h4.blue {
   color: #000099;
 }
 
 li.red, h4.red, h5.red, h5.red a {
   color: #B00000;
+}
+
+.flash {
+  padding: 0.75em;
+  background-color: #99FF66;
 }
 
 #contact a {
