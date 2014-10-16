@@ -8,7 +8,6 @@ feature "User creates a trade" do
 
     sign_in_as(user)
 
-    click_link "trade"
     click_on "Start Trade"
     select player.team.name, from: "trade_team_team_id"
     click_on "Select Team"
@@ -19,7 +18,6 @@ feature "User creates a trade" do
     click_on "Select Team"
     select player_2.name, from: "traded_player_player_id"
     click_on "Select Player"
-    click_link "Finish Trade"
     click_on "Submit Trade"
     expect(page).to have_content "Trade Result"
   end
@@ -28,7 +26,7 @@ feature "User creates a trade" do
     user = FactoryGirl.create(:user)
     player = FactoryGirl.create(:player)
     sign_in_as(user)
-    click_link "trade"
+
     click_on "Start Trade"
     select player.team.name, from: "trade_team_team_id"
     click_on "Select Team"
@@ -44,7 +42,7 @@ feature "User creates a trade" do
     user = FactoryGirl.create(:user)
     player = FactoryGirl.create(:player)
     sign_in_as(user)
-    click_link "trade"
+
     click_on "Start Trade"
     select player.team.name, from: "trade_team_team_id"
     click_on "Select Team"
