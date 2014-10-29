@@ -22,35 +22,34 @@ include ActionView::Helpers::NumberHelper
     end
   end
 
+
   def update
-    team_salary = {}
     @trade = Trade.find(params[:id])
-    @trade.trade_teams.each do |trade_team|
-      trade_team.traded_players.each do |traded_player|
-        if team_salary[traded_player.player.team.id]
-          team_salary[traded_player.player.team.id] <<
-          traded_player.player.salary
-        else
-          team_salary[traded_player.player.team.id] =
-          [traded_player.player.salary]
-        end
+    team_salary = {}
+    @trade.players.each do |player|
+      if team_salary[player.team_id]
+        team_salary[player.team_id] <<
+        player.salary
+      else
+        team_salary[player.team_id] =
+        [player.salary]
       end
     end
+
     total_salary = {}
     team_salary.each do |team, salary|
       total = salary.inject { |sum, x| sum + x }
       total_salary[team] = total
     end
+
     team_ratings = {}
-    @trade.trade_teams.each do |trade_team|
-      trade_team.traded_players.each do |traded_player|
-        if team_ratings[traded_player.player.team.id]
-          team_ratings[traded_player.player.team.id] <<
-          traded_player.player.rating
-        else
-          team_ratings[traded_player.player.team.id] =
-          [traded_player.player.rating]
-        end
+    @trade.players.each do |player|
+      if team_ratings[player.team_id]
+        team_ratings[player.team_id] <<
+        player.rating
+      else
+        team_ratings[player.team_id] =
+        [player.rating]
       end
     end
     average_ratings = {}
@@ -80,23 +79,23 @@ include ActionView::Helpers::NumberHelper
       team_1_change = "+0"
       team_2_change = "+0"
     end
-      if Team.find(team_diff[0][0]).salary_cap > team_1_new_cap &&
-        Team.find(team_diff[1][0]).salary_cap > team_2_new_cap
-        @trade.update(team_1_new_cap_hit: "#{team_1} total salary post-trade: #{team_1_new_cap_curr}",
-          team_2_new_cap_hit: "#{team_2} total salary post-trade: #{team_2_new_cap_curr}",
-          status: "PASSED", team_1_change: "#{team_1} post-trade analysis: #{team_1_change} wins",
-          team_2_change: "#{team_2} post-trade analysis: #{team_2_change} wins")
-      elsif Team.find(team_diff[0][0]).salary_cap < team_1_new_cap
-        team_1_cap_diff = Team.find(team_diff[0][0]).salary_cap - team_1_new_cap
-        @trade.update(team_1_new_cap_hit: "#{team_1} total salary post-trade: #{team_1_new_cap_curr}",
-          team_2_new_cap_hit: "#{team_2} total salary post-trade: #{team_2_new_cap_curr}",
-          cap_needed_team: team_1, cap_needed: team_1_cap_diff.abs, status: "FAILED")
-      else
-        team_2_cap_diff = Team.find(team_diff[1][0]).salary_cap - team_2_new_cap
-        @trade.update(team_1_new_cap_hit: "#{team_1} total salary post-trade: #{team_1_new_cap_curr}",
-          team_2_new_cap_hit: "#{team_2} total salary post-trade: #{team_2_new_cap_curr}",
-          cap_needed_team: team_2, cap_needed: team_2_cap_diff.abs, status: "FAILED")
-      end
+    if Team.find(team_diff[0][0]).salary_cap > team_1_new_cap &&
+      Team.find(team_diff[1][0]).salary_cap > team_2_new_cap
+      @trade.update(team_1_new_cap_hit: "#{team_1} total salary post-trade: #{team_1_new_cap_curr}",
+        team_2_new_cap_hit: "#{team_2} total salary post-trade: #{team_2_new_cap_curr}",
+        status: "PASSED", team_1_change: "#{team_1} post-trade analysis: #{team_1_change} wins",
+        team_2_change: "#{team_2} post-trade analysis: #{team_2_change} wins")
+    elsif Team.find(team_diff[0][0]).salary_cap < team_1_new_cap
+      team_1_cap_diff = Team.find(team_diff[0][0]).salary_cap - team_1_new_cap
+      @trade.update(team_1_new_cap_hit: "#{team_1} total salary post-trade: #{team_1_new_cap_curr}",
+        team_2_new_cap_hit: "#{team_2} total salary post-trade: #{team_2_new_cap_curr}",
+        cap_needed_team: team_1, cap_needed: team_1_cap_diff.abs, status: "FAILED")
+    else
+      team_2_cap_diff = Team.find(team_diff[1][0]).salary_cap - team_2_new_cap
+      @trade.update(team_1_new_cap_hit: "#{team_1} total salary post-trade: #{team_1_new_cap_curr}",
+        team_2_new_cap_hit: "#{team_2} total salary post-trade: #{team_2_new_cap_curr}",
+        cap_needed_team: team_2, cap_needed: team_2_cap_diff.abs, status: "FAILED")
+    end
     redirect_to trades_path
   end
 
