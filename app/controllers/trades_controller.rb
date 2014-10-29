@@ -22,32 +22,17 @@ include ActionView::Helpers::NumberHelper
     end
   end
 
-  class TradeAnalysis
-    def initialize(player1, player2)
-      @player1 = player1
-      @player3 = player2
-    end
-
-    def new_salary_cap_for_team1
-
-    end
-  end
 
   def update
     @trade = Trade.find(params[:id])
-
-    @analysis = TradeAnalysis.new(player1, player2).analyze
-
     team_salary = {}
-    @trade.trade_teams.each do |trade_team|
-      trade_team.traded_players.each do |traded_player|
-        if team_salary[traded_player.player.team.id]
-          team_salary[traded_player.player.team.id] <<
-          traded_player.player.salary
-        else
-          team_salary[traded_player.player.team.id] =
-          [traded_player.player.salary]
-        end
+    @trade.players.each do |player|
+      if team_salary[player.team_id]
+        team_salary[player.team_id] <<
+        player.salary
+      else
+        team_salary[player.team_id] =
+        [player.salary]
       end
     end
 
@@ -58,15 +43,13 @@ include ActionView::Helpers::NumberHelper
     end
 
     team_ratings = {}
-    @trade.trade_teams.each do |trade_team|
-      trade_team.traded_players.each do |traded_player|
-        if team_ratings[traded_player.player.team.id]
-          team_ratings[traded_player.player.team.id] <<
-          traded_player.player.rating
-        else
-          team_ratings[traded_player.player.team.id] =
-          [traded_player.player.rating]
-        end
+    @trade.players.each do |player|
+      if team_ratings[player.team_id]
+        team_ratings[player.team_id] <<
+        player.rating
+      else
+        team_ratings[player.team_id] =
+        [player.rating]
       end
     end
     average_ratings = {}
